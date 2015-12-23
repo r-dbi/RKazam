@@ -28,6 +28,7 @@ Kazam <- function() {
 setClass("KazamDriver", contains = "DBIDriver")
 
 #' @rdname DBI
+#' @inheritParams DBI::show
 #' @export
 setMethod(
   "show", "KazamDriver",
@@ -36,6 +37,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbConnect
 #' @export
 setMethod(
   "dbConnect", "KazamDriver",
@@ -45,6 +47,7 @@ setMethod(
 )
 
 #' @rdname DBI
+#' @inheritParams DBI::dbDataType
 #' @export
 setMethod(
   "dbDataType", "KazamDriver",
@@ -55,15 +58,7 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
-setMethod(
-  "dbDataType", c("KazamDriver", "list"),
-  function(dbObj, obj, ...) {
-    # rstats-db/DBI#70
-    testthat::skip("Not yet implemented")
-  })
-
-#' @rdname DBI
+#' @inheritParams DBI::dbIsValid
 #' @export
 setMethod(
   "dbIsValid", "KazamDriver",
@@ -72,6 +67,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbGetInfo
 #' @export
 setMethod(
   "dbGetInfo", "KazamDriver",

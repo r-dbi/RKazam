@@ -14,7 +14,6 @@
 \alias{dbConnect,KazamDriver-method}
 \alias{dbDataType,KazamConnection,ANY-method}
 \alias{dbDataType,KazamDriver,ANY-method}
-\alias{dbDataType,KazamDriver,list-method}
 \alias{dbDisconnect,KazamConnection-method}
 \alias{dbExistsTable,KazamConnection,character-method}
 \alias{dbFetch,KazamResult-method}
@@ -47,8 +46,6 @@
 \S4method{dbConnect}{KazamDriver}(drv, ...)
 
 \S4method{dbDataType}{KazamDriver,ANY}(dbObj, obj, ...)
-
-\S4method{dbDataType}{KazamDriver,list}(dbObj, obj, ...)
 
 \S4method{dbIsValid}{KazamDriver}(dbObj)
 
@@ -111,6 +108,42 @@
 \S4method{dbGetRowsAffected}{KazamResult}(res, ...)
 
 \S4method{dbBind}{KazamResult}(res, params, ...)
+}
+\arguments{
+\item{drv}{an object that inherits from \code{\linkS4class{DBIDriver}}, or
+a character string specifying the name of DBMS driver, e.g., "RSQLite",
+"RMySQL", "RPostgreSQL", or an existing \code{\linkS4class{DBIConnection}}
+object (in order to clone an existing connection).}
+
+\item{...}{authorization arguments needed by the DBMS instance; these
+typically include \code{user}, \code{password}, \code{dbname}, \code{host},
+\code{port}, etc.  For details see the appropriate \code{DBIDriver}.}
+
+\item{dbObj}{A object inheriting from \code{\linkS4class{DBIDriver}}}
+
+\item{obj}{An R object whose SQL type we want to determine.}
+
+\item{conn}{A \code{\linkS4class{DBIConnection}} object, as produced by
+\code{\link{dbConnect}}.}
+
+\item{statement}{a character vector of length 1 containing SQL.}
+
+\item{x}{A character vector to label as being escaped SQL.}
+
+\item{name}{A character string specifying a DBMS table name.}
+
+\item{value}{a data.frame (or coercible to data.frame).}
+
+\item{res}{An object inheriting from \code{\linkS4class{DBIResult}}.}
+
+\item{n}{maximum number of records to retrieve per fetch. Use \code{n = -1}
+to retrieve all pending records.  Some implementations may recognize other
+special values.}
+
+\item{params}{A list of bindings. Named values should be matched to
+named paramters (if supported by the DBI backend). Unnamed values
+will be matched by position. I don't recommend mixing named and unnamed
+values.}
 }
 \description{
 This package implements pure virtual functions defined in the
