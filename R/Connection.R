@@ -10,7 +10,6 @@ setClass(
 )
 
 #' @rdname DBI
-#' @inheritParams DBI::show
 #' @export
 setMethod(
   "show", "KazamConnection",
@@ -19,7 +18,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbDisconnect
 #' @export
 setMethod(
   "dbDisconnect", "KazamConnection",
@@ -29,7 +27,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbSendQuery
 #' @export
 setMethod(
   "dbSendQuery", c("KazamConnection", "character"),
@@ -38,7 +35,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbDataType
 #' @export
 setMethod(
   "dbDataType", "KazamConnection",
@@ -49,7 +45,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbQuoteString
 #' @export
 setMethod(
   "dbQuoteString", c("KazamConnection", "character"),
@@ -59,7 +54,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbQuoteIdentifier
 #' @export
 setMethod(
   "dbQuoteIdentifier", c("KazamConnection", "character"),
@@ -69,7 +63,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbWriteTable
 #' @export
 setMethod(
   "dbWriteTable", c("KazamConnection", "character", "data.frame"),
@@ -78,7 +71,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbReadTable
 #' @export
 setMethod(
   "dbReadTable", c("KazamConnection", "character"),
@@ -87,7 +79,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbListTables
 #' @export
 setMethod(
   "dbListTables", "KazamConnection",
@@ -96,7 +87,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbExistsTable
 #' @export
 setMethod(
   "dbExistsTable", c("KazamConnection", "character"),
@@ -105,7 +95,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbListFields
 #' @export
 setMethod(
   "dbListFields", c("KazamConnection", "character"),
@@ -114,7 +103,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbRemoveTable
 #' @export
 setMethod(
   "dbRemoveTable", c("KazamConnection", "character"),
@@ -123,7 +111,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbGetInfo
 #' @export
 setMethod(
   "dbGetInfo", "KazamConnection",
@@ -132,7 +119,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbIsValid
 #' @export
 setMethod(
   "dbIsValid", "KazamConnection",
@@ -141,7 +127,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbBegin
 #' @export
 setMethod(
   "dbBegin", "KazamConnection",
@@ -150,7 +135,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbCommit
 #' @export
 setMethod(
   "dbCommit", "KazamConnection",
@@ -159,7 +143,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbRollback
 #' @export
 setMethod(
   "dbRollback", "KazamConnection",

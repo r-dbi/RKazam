@@ -13,7 +13,6 @@ setClass(
 )
 
 #' @rdname DBI
-#' @inheritParams DBI::show
 #' @export
 setMethod(
   "show", "KazamResult",
@@ -22,7 +21,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbClearResult
 #' @export
 setMethod(
   "dbClearResult", "KazamResult",
@@ -31,7 +29,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbFetch
 #' @export
 setMethod(
   "dbFetch", "KazamResult",
@@ -40,7 +37,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbHasCompleted
 #' @export
 setMethod(
   "dbHasCompleted", "KazamResult",
@@ -49,7 +45,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbGetInfo
 #' @export
 setMethod(
   "dbGetInfo", "KazamResult",
@@ -58,7 +53,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbIsValid
 #' @export
 setMethod(
   "dbIsValid", "KazamResult",
@@ -67,7 +61,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbGetStatement
 #' @export
 setMethod(
   "dbGetStatement", "KazamResult",
@@ -77,7 +70,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbColumnInfo
 #' @export
 setMethod(
   "dbColumnInfo", "KazamResult",
@@ -86,7 +78,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbGetRowCount
 #' @export
 setMethod(
   "dbGetRowCount", "KazamResult",
@@ -96,7 +87,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbGetRowsAffected
 #' @export
 setMethod(
   "dbGetRowsAffected", "KazamResult",
@@ -106,7 +96,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::dbBind
 #' @export
 setMethod(
   "dbBind", "KazamResult",
