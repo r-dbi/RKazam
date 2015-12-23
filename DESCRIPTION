@@ -11,6 +11,7 @@ License: GPL-3
 LazyData: true
 Encoding: UTF-8
 Imports:
+    testthat,
     DBI,
     methods
 GitHub: https://github.com/krlmlr/RKazam
