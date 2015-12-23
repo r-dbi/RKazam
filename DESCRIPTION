@@ -1,0 +1,22 @@
+Package: RKazam
+Title: Boilerplate for implementing a DBI back end
+Version: 0.0-0
+Authors@R: as.person("Kirill Müller <krlmlr+r@mailbox.org> [aut, cre]")
+Description: A dummy DBI back end that provides access to a hypothetical
+    data source named "Kazam", intended to be used as boilerplate for
+    implementing DBI back ends from scratch.
+Depends:
+    R (>= 3.0.0)
+License: GPL-3
+LazyData: true
+Encoding: UTF-8
+Imports:
+    DBI,
+    methods
+GitHub: https://github.com/krlmlr/RKazam
+Collate:
+    'RKazam.R'
+    'Driver.R'
+    'Connection.R'
+    'Result.R'
+RoxygenNote: 5.0.1.9000
