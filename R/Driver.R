@@ -47,6 +47,25 @@ setMethod(
 #' @rdname DBI
 #' @export
 setMethod(
+  "dbDataType", "KazamDriver",
+  function(dbObj, obj, ...) {
+    tryCatch(
+      getMethod("dbDataType", "DBIObject", asNamespace("DBI"))(dbObj, obj, ...),
+      error = function(e) testthat::skip("Not yet implemented"))
+  })
+
+#' @rdname DBI
+#' @export
+setMethod(
+  "dbDataType", c("KazamDriver", "list"),
+  function(dbObj, obj, ...) {
+    # rstats-db/DBI#70
+    testthat::skip("Not yet implemented")
+  })
+
+#' @rdname DBI
+#' @export
+setMethod(
   "dbIsValid", "KazamDriver",
   function(dbObj) {
     testthat::skip("Not yet implemented")

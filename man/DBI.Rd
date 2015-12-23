@@ -6,11 +6,15 @@
 \alias{KazamConnection-class}
 \alias{KazamDriver-class}
 \alias{KazamResult-class}
+\alias{dbBegin,KazamConnection-method}
 \alias{dbBind,KazamResult-method}
 \alias{dbClearResult,KazamResult-method}
 \alias{dbColumnInfo,KazamResult-method}
+\alias{dbCommit,KazamConnection-method}
 \alias{dbConnect,KazamDriver-method}
 \alias{dbDataType,KazamConnection,ANY-method}
+\alias{dbDataType,KazamDriver,ANY-method}
+\alias{dbDataType,KazamDriver,list-method}
 \alias{dbDisconnect,KazamConnection-method}
 \alias{dbExistsTable,KazamConnection,character-method}
 \alias{dbFetch,KazamResult-method}
@@ -23,13 +27,15 @@
 \alias{dbHasCompleted,KazamResult-method}
 \alias{dbIsValid,KazamConnection-method}
 \alias{dbIsValid,KazamDriver-method}
+\alias{dbIsValid,KazamResult-method}
 \alias{dbListFields,KazamConnection,character-method}
 \alias{dbListTables,KazamConnection-method}
 \alias{dbQuoteIdentifier,KazamConnection,character-method}
 \alias{dbQuoteString,KazamConnection,character-method}
 \alias{dbReadTable,KazamConnection,character-method}
 \alias{dbRemoveTable,KazamConnection,character-method}
-\alias{dbSendQuery,KazamConnection-method}
+\alias{dbRollback,KazamConnection-method}
+\alias{dbSendQuery,KazamConnection,character-method}
 \alias{dbWriteTable,KazamConnection,character,data.frame-method}
 \alias{show,KazamConnection-method}
 \alias{show,KazamDriver-method}
@@ -40,6 +46,10 @@
 
 \S4method{dbConnect}{KazamDriver}(drv, ...)
 
+\S4method{dbDataType}{KazamDriver,ANY}(dbObj, obj, ...)
+
+\S4method{dbDataType}{KazamDriver,list}(dbObj, obj, ...)
+
 \S4method{dbIsValid}{KazamDriver}(dbObj)
 
 \S4method{dbGetInfo}{KazamDriver}(dbObj, ...)
@@ -48,7 +58,7 @@
 
 \S4method{dbDisconnect}{KazamConnection}(conn)
 
-\S4method{dbSendQuery}{KazamConnection}(conn, statement, ...)
+\S4method{dbSendQuery}{KazamConnection,character}(conn, statement, ...)
 
 \S4method{dbDataType}{KazamConnection,ANY}(dbObj, obj, ...)
 
@@ -74,6 +84,12 @@
 
 \S4method{dbIsValid}{KazamConnection}(dbObj)
 
+\S4method{dbBegin}{KazamConnection}(conn)
+
+\S4method{dbCommit}{KazamConnection}(conn)
+
+\S4method{dbRollback}{KazamConnection}(conn)
+
 \S4method{show}{KazamResult}(object)
 
 \S4method{dbClearResult}{KazamResult}(res, ...)
@@ -83,6 +99,8 @@
 \S4method{dbHasCompleted}{KazamResult}(res, ...)
 
 \S4method{dbGetInfo}{KazamResult}(dbObj, ...)
+
+\S4method{dbIsValid}{KazamResult}(dbObj)
 
 \S4method{dbGetStatement}{KazamResult}(res, ...)
 

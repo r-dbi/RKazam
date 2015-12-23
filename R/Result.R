@@ -7,7 +7,8 @@ setClass(
   "KazamResult",
   contains = "DBIResult",
   slots = list(
-    connection = "KazamConnection"
+    connection = "KazamConnection",
+    statement = "character"
   )
 )
 
@@ -54,10 +55,18 @@ setMethod(
 #' @rdname DBI
 #' @export
 setMethod(
+  "dbIsValid", "KazamResult",
+  function(dbObj) {
+    testthat::skip("Not yet implemented")
+  })
+
+#' @rdname DBI
+#' @export
+setMethod(
   "dbGetStatement", "KazamResult",
   function(res, ...) {
     # Optional
-    getMethod("dbGetStatement", "DBIResult")(res, ...)
+    getMethod("dbGetStatement", "DBIResult", asNamespace("DBI"))(res, ...)
   })
 
 #' @rdname DBI
@@ -74,7 +83,7 @@ setMethod(
   "dbGetRowCount", "KazamResult",
   function(res, ...) {
     # Optional
-    getMethod("dbGetRowCount", "DBIResult")(res, ...)
+    getMethod("dbGetRowCount", "DBIResult", asNamespace("DBI"))(res, ...)
   })
 
 #' @rdname DBI
@@ -83,7 +92,7 @@ setMethod(
   "dbGetRowsAffected", "KazamResult",
   function(res, ...) {
     # Optional
-    getMethod("dbGetRowsAffected", "DBIResult")(res, ...)
+    getMethod("dbGetRowsAffected", "DBIResult", asNamespace("DBI"))(res, ...)
   })
 
 #' @rdname DBI

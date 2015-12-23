@@ -29,9 +29,9 @@ setMethod(
 #' @rdname DBI
 #' @export
 setMethod(
-  "dbSendQuery", "KazamConnection",
+  "dbSendQuery", c("KazamConnection", "character"),
   function(conn, statement, ...) {
-    new("KazamResult", statement)
+    new("KazamResult", connection = conn, statement = statement)
   })
 
 #' @rdname DBI
@@ -39,8 +39,9 @@ setMethod(
 setMethod(
   "dbDataType", "KazamConnection",
   function(dbObj, obj, ...) {
-    # Optional
-    getMethod("dbDataType", c("DBIobject"))(dbObj, ...)
+    tryCatch(
+      getMethod("dbDataType", "DBIObject", asNamespace("DBI"))(dbObj, obj, ...),
+      error = function(e) testthat::skip("Not yet implemented"))
   })
 
 #' @rdname DBI
@@ -49,7 +50,7 @@ setMethod(
   "dbQuoteString", c("KazamConnection", "character"),
   function(conn, x, ...) {
     # Optional
-    getMethod("dbQuoteString", c("DBIConnection", "character"))(conn, x, ...)
+    getMethod("dbQuoteString", c("DBIConnection", "character"), asNamespace("DBI"))(conn, x, ...)
   })
 
 #' @rdname DBI
@@ -58,7 +59,7 @@ setMethod(
   "dbQuoteIdentifier", c("KazamConnection", "character"),
   function(conn, x, ...) {
     # Optional
-    getMethod("dbQuoteIdentifier", c("DBIConnection", "character"))(conn, x, ...)
+    getMethod("dbQuoteIdentifier", c("DBIConnection", "character"), asNamespace("DBI"))(conn, x, ...)
   })
 
 #' @rdname DBI
@@ -122,5 +123,29 @@ setMethod(
 setMethod(
   "dbIsValid", "KazamConnection",
   function(dbObj) {
+    testthat::skip("Not yet implemented")
+  })
+
+#' @rdname DBI
+#' @export
+setMethod(
+  "dbBegin", "KazamConnection",
+  function(conn) {
+    testthat::skip("Not yet implemented")
+  })
+
+#' @rdname DBI
+#' @export
+setMethod(
+  "dbCommit", "KazamConnection",
+  function(conn) {
+    testthat::skip("Not yet implemented")
+  })
+
+#' @rdname DBI
+#' @export
+setMethod(
+  "dbRollback", "KazamConnection",
+  function(conn) {
     testthat::skip("Not yet implemented")
   })
