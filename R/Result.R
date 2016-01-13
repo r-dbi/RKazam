@@ -1,4 +1,4 @@
-#' @include Result.R
+#' @include Connection.R
 NULL
 
 #' @rdname DBI
