@@ -113,7 +113,6 @@
 \S4method{dbBind}{KazamResult}(res, params, ...)
 }
 \description{
-This package implements pure virtual functions defined in the
-\code{DBI} package.
+Implementations of pure virtual functions defined in the \code{DBI} package.
 }
 
