@@ -25,7 +25,7 @@ setMethod(
 setMethod(
   "dbClearResult", "KazamResult",
   function(res, ...) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbClearResult(Result)")
   })
 
 #' @rdname DBI
@@ -33,7 +33,7 @@ setMethod(
 setMethod(
   "dbFetch", "KazamResult",
   function(res, n = -1, ...) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbFetch(Result)")
   })
 
 #' @rdname DBI
@@ -41,7 +41,7 @@ setMethod(
 setMethod(
   "dbHasCompleted", "KazamResult",
   function(res, ...) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbHasCompleted(Result)")
   })
 
 #' @rdname DBI
@@ -49,7 +49,7 @@ setMethod(
 setMethod(
   "dbGetInfo", "KazamResult",
   function(dbObj, ...) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbGetInfo(Result)")
   })
 
 #' @rdname DBI
@@ -57,7 +57,7 @@ setMethod(
 setMethod(
   "dbIsValid", "KazamResult",
   function(dbObj) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbIsValid(Result)")
   })
 
 #' @rdname DBI
@@ -74,7 +74,7 @@ setMethod(
 setMethod(
   "dbColumnInfo", "KazamResult",
   function(res, ...) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbColumnInfo(Result)")
   })
 
 #' @rdname DBI
@@ -100,5 +100,5 @@ setMethod(
 setMethod(
   "dbBind", "KazamResult",
   function(res, params, ...) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbBind(Result)")
   })

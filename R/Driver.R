@@ -50,7 +50,7 @@ setMethod(
   function(dbObj, obj, ...) {
     tryCatch(
       getMethod("dbDataType", "DBIObject", asNamespace("DBI"))(dbObj, obj, ...),
-      error = function(e) testthat::skip("Not yet implemented"))
+      error = function(e) testthat::skip("Not yet implemented: dbDataType(Driver)"))
   })
 
 #' @rdname DBI
@@ -59,7 +59,7 @@ setMethod(
   "dbDataType", c("KazamDriver", "list"),
   function(dbObj, obj, ...) {
     # rstats-db/DBI#70
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbDataType(Driver, list)")
   })
 
 #' @rdname DBI
@@ -67,7 +67,7 @@ setMethod(
 setMethod(
   "dbIsValid", "KazamDriver",
   function(dbObj) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbIsValid(Driver)")
   })
 
 #' @rdname DBI
@@ -75,5 +75,5 @@ setMethod(
 setMethod(
   "dbGetInfo", "KazamDriver",
   function(dbObj, ...) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbGetInfo(Driver)")
   })

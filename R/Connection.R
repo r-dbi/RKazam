@@ -41,7 +41,7 @@ setMethod(
   function(dbObj, obj, ...) {
     tryCatch(
       getMethod("dbDataType", "DBIObject", asNamespace("DBI"))(dbObj, obj, ...),
-      error = function(e) testthat::skip("Not yet implemented"))
+      error = function(e) testthat::skip("Not yet implemented: dbDataType(Connection)"))
   })
 
 #' @rdname DBI
@@ -67,7 +67,7 @@ setMethod(
 setMethod(
   "dbWriteTable", c("KazamConnection", "character", "data.frame"),
   function(conn, name, value, overwrite=FALSE, append=FALSE, ...) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbWriteTable(Connection, character, data.frame)")
   })
 
 #' @rdname DBI
@@ -75,7 +75,7 @@ setMethod(
 setMethod(
   "dbReadTable", c("KazamConnection", "character"),
   function(conn, name, row.names = NA, check.names = TRUE, select.cols = "*") {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbReadTable(Connection, character)")
   })
 
 #' @rdname DBI
@@ -83,7 +83,7 @@ setMethod(
 setMethod(
   "dbListTables", "KazamConnection",
   function(conn) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbListTables(Connection)")
   })
 
 #' @rdname DBI
@@ -91,7 +91,7 @@ setMethod(
 setMethod(
   "dbExistsTable", c("KazamConnection", "character"),
   function(conn, name) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbExistsTable(Connection)")
   })
 
 #' @rdname DBI
@@ -99,7 +99,7 @@ setMethod(
 setMethod(
   "dbListFields", c("KazamConnection", "character"),
   function(conn, name) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbListFields(Connection, character)")
   })
 
 #' @rdname DBI
@@ -107,7 +107,7 @@ setMethod(
 setMethod(
   "dbRemoveTable", c("KazamConnection", "character"),
   function(conn, name) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbRemoveTable(Connection, character)")
   })
 
 #' @rdname DBI
@@ -115,7 +115,7 @@ setMethod(
 setMethod(
   "dbGetInfo", "KazamConnection",
   function(dbObj, ...) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbGetInfo(Connection)")
   })
 
 #' @rdname DBI
@@ -123,7 +123,7 @@ setMethod(
 setMethod(
   "dbIsValid", "KazamConnection",
   function(dbObj) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbIsValid(Connection)")
   })
 
 #' @rdname DBI
@@ -131,7 +131,7 @@ setMethod(
 setMethod(
   "dbBegin", "KazamConnection",
   function(conn) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbBegin(Connection)")
   })
 
 #' @rdname DBI
@@ -139,7 +139,7 @@ setMethod(
 setMethod(
   "dbCommit", "KazamConnection",
   function(conn) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbCommit(Connection)")
   })
 
 #' @rdname DBI
@@ -147,5 +147,5 @@ setMethod(
 setMethod(
   "dbRollback", "KazamConnection",
   function(conn) {
-    testthat::skip("Not yet implemented")
+    testthat::skip("Not yet implemented: dbRollback(Connection)")
   })
