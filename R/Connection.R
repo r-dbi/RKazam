@@ -26,6 +26,14 @@ setMethod(
 #' @rdname DBI
 #' @export
 setMethod(
+  "dbIsValid", "KazamConnection",
+  function(dbObj) {
+    testthat::skip("Not yet implemented: dbIsValid(Connection)")
+  })
+
+#' @rdname DBI
+#' @export
+setMethod(
   "dbDisconnect", "KazamConnection",
   function(conn) {
     # TODO: Free resources
@@ -122,14 +130,6 @@ setMethod(
   "dbGetInfo", "KazamConnection",
   function(dbObj, ...) {
     testthat::skip("Not yet implemented: dbGetInfo(Connection)")
-  })
-
-#' @rdname DBI
-#' @export
-setMethod(
-  "dbIsValid", "KazamConnection",
-  function(dbObj) {
-    testthat::skip("Not yet implemented: dbIsValid(Connection)")
   })
 
 #' @rdname DBI
