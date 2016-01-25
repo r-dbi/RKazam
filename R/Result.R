@@ -18,6 +18,7 @@ setMethod(
   "show", "KazamResult",
   function(object) {
     cat("<KazamResult>\n")
+    # TODO: Print more details
   })
 
 #' @rdname DBI

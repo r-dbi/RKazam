@@ -15,6 +15,7 @@ setMethod(
   "show", "KazamConnection",
   function(object) {
     cat("<KazamConnection>\n")
+    # TODO: Print more details
   })
 
 #' @rdname DBI
