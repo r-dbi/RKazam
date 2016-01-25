@@ -36,6 +36,10 @@ setMethod(
 setMethod(
   "dbDisconnect", "KazamConnection",
   function(conn) {
+    if (!dbIsValid(conn)) {
+      warning("Connection already closed.", call. = FALSE)
+    }
+
     # TODO: Free resources
     TRUE
   })
