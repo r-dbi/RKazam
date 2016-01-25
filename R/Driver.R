@@ -40,7 +40,7 @@ setMethod(
 setMethod(
   "dbConnect", "KazamDriver",
   function(drv, ...) {
-    new("KazamConnection")
+    KazamConnection()
   }
 )
 

@@ -1,6 +1,11 @@
 #' @include Connection.R
 NULL
 
+KazamResult <- function(connection, statement) {
+  # TODO: Initialize result
+  new("KazamResult", connection = connection, statement = statement)
+}
+
 #' @rdname DBI
 #' @export
 setClass(

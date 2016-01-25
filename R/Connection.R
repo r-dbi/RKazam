@@ -1,6 +1,11 @@
 #' @include Driver.R
 NULL
 
+KazamConnection <- function() {
+  # TODO: Add arguments
+  new("KazamConnection")
+}
+
 #' @rdname DBI
 #' @export
 setClass(
@@ -32,7 +37,7 @@ setMethod(
 setMethod(
   "dbSendQuery", c("KazamConnection", "character"),
   function(conn, statement, ...) {
-    new("KazamResult", connection = conn, statement = statement)
+    KazamResult(connection = conn, statement = statement)
   })
 
 #' @rdname DBI
