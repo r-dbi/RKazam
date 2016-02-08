@@ -92,7 +92,7 @@ setMethod(
 #' @export
 setMethod(
   "dbReadTable", c("KazamConnection", "character"),
-  function(conn, name, row.names = NA, check.names = TRUE, select.cols = "*") {
+  function(conn, name) {
     testthat::skip("Not yet implemented: dbReadTable(Connection, character)")
   })
 
