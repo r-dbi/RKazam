@@ -15,7 +15,6 @@ setClass(
 )
 
 #' @rdname DBI
-#' @export
 setMethod(
   "show", "KazamConnection",
   function(object) {
@@ -24,7 +23,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbIsValid", "KazamConnection",
   function(dbObj) {
@@ -32,7 +30,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbDisconnect", "KazamConnection",
   function(conn) {
@@ -45,7 +42,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbSendQuery", c("KazamConnection", "character"),
   function(conn, statement, ...) {
@@ -53,7 +49,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbDataType", "KazamConnection",
   function(dbObj, obj, ...) {
@@ -63,7 +58,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbQuoteString", c("KazamConnection", "character"),
   function(conn, x, ...) {
@@ -72,7 +66,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbQuoteIdentifier", c("KazamConnection", "character"),
   function(conn, x, ...) {
@@ -81,7 +74,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbWriteTable", c("KazamConnection", "character", "data.frame"),
   function(conn, name, value, overwrite=FALSE, append=FALSE, ...) {
@@ -89,7 +81,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbReadTable", c("KazamConnection", "character"),
   function(conn, name) {
@@ -97,7 +88,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbListTables", "KazamConnection",
   function(conn) {
@@ -105,7 +95,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbExistsTable", c("KazamConnection", "character"),
   function(conn, name) {
@@ -113,7 +102,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbListFields", c("KazamConnection", "character"),
   function(conn, name) {
@@ -121,7 +109,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbRemoveTable", c("KazamConnection", "character"),
   function(conn, name) {
@@ -129,7 +116,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbGetInfo", "KazamConnection",
   function(dbObj, ...) {
@@ -137,7 +123,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbBegin", "KazamConnection",
   function(conn) {
@@ -145,7 +130,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbCommit", "KazamConnection",
   function(conn) {
@@ -153,7 +137,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbRollback", "KazamConnection",
   function(conn) {

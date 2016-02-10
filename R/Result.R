@@ -18,7 +18,6 @@ setClass(
 )
 
 #' @rdname DBI
-#' @export
 setMethod(
   "show", "KazamResult",
   function(object) {
@@ -27,7 +26,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbClearResult", "KazamResult",
   function(res, ...) {
@@ -35,7 +33,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbFetch", "KazamResult",
   function(res, n = -1, ...) {
@@ -43,7 +40,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbHasCompleted", "KazamResult",
   function(res, ...) {
@@ -51,7 +47,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbGetInfo", "KazamResult",
   function(dbObj, ...) {
@@ -59,7 +54,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbIsValid", "KazamResult",
   function(dbObj) {
@@ -67,7 +61,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbGetStatement", "KazamResult",
   function(res, ...) {
@@ -76,7 +69,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbColumnInfo", "KazamResult",
   function(res, ...) {
@@ -84,7 +76,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbGetRowCount", "KazamResult",
   function(res, ...) {
@@ -93,7 +84,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbGetRowsAffected", "KazamResult",
   function(res, ...) {
@@ -102,7 +92,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbBind", "KazamResult",
   function(res, params, ...) {

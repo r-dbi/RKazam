@@ -27,7 +27,6 @@ Kazam <- function() {
 setClass("KazamDriver", contains = "DBIDriver")
 
 #' @rdname DBI
-#' @export
 setMethod(
   "show", "KazamDriver",
   function(object) {
@@ -36,7 +35,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbConnect", "KazamDriver",
   function(drv, ...) {
@@ -45,7 +43,6 @@ setMethod(
 )
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbDataType", "KazamDriver",
   function(dbObj, obj, ...) {
@@ -55,7 +52,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbDataType", c("KazamDriver", "list"),
   function(dbObj, obj, ...) {
@@ -64,7 +60,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbIsValid", "KazamDriver",
   function(dbObj) {
@@ -72,7 +67,6 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @export
 setMethod(
   "dbGetInfo", "KazamDriver",
   function(dbObj, ...) {
