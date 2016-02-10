@@ -27,7 +27,7 @@ setMethod(
 #' @export
 setMethod(
   "dbIsValid", "KazamConnection",
-  function(dbObj) {
+  function(dbObj, ...) {
     testthat::skip("Not yet implemented: dbIsValid(Connection)")
   })
 
@@ -35,7 +35,7 @@ setMethod(
 #' @export
 setMethod(
   "dbDisconnect", "KazamConnection",
-  function(conn) {
+  function(conn, ...) {
     if (!dbIsValid(conn)) {
       warning("Connection already closed.", call. = FALSE)
     }
@@ -92,7 +92,7 @@ setMethod(
 #' @export
 setMethod(
   "dbReadTable", c("KazamConnection", "character"),
-  function(conn, name) {
+  function(conn, name, ...) {
     testthat::skip("Not yet implemented: dbReadTable(Connection, character)")
   })
 
@@ -100,7 +100,7 @@ setMethod(
 #' @export
 setMethod(
   "dbListTables", "KazamConnection",
-  function(conn) {
+  function(conn, ...) {
     testthat::skip("Not yet implemented: dbListTables(Connection)")
   })
 
@@ -108,7 +108,7 @@ setMethod(
 #' @export
 setMethod(
   "dbExistsTable", c("KazamConnection", "character"),
-  function(conn, name) {
+  function(conn, name, ...) {
     testthat::skip("Not yet implemented: dbExistsTable(Connection)")
   })
 
@@ -116,7 +116,7 @@ setMethod(
 #' @export
 setMethod(
   "dbListFields", c("KazamConnection", "character"),
-  function(conn, name) {
+  function(conn, name, ...) {
     testthat::skip("Not yet implemented: dbListFields(Connection, character)")
   })
 
@@ -140,7 +140,7 @@ setMethod(
 #' @export
 setMethod(
   "dbBegin", "KazamConnection",
-  function(conn) {
+  function(conn, ...) {
     testthat::skip("Not yet implemented: dbBegin(Connection)")
   })
 
@@ -148,7 +148,7 @@ setMethod(
 #' @export
 setMethod(
   "dbCommit", "KazamConnection",
-  function(conn) {
+  function(conn, ...) {
     testthat::skip("Not yet implemented: dbCommit(Connection)")
   })
 
@@ -156,6 +156,6 @@ setMethod(
 #' @export
 setMethod(
   "dbRollback", "KazamConnection",
-  function(conn) {
+  function(conn, ...) {
     testthat::skip("Not yet implemented: dbRollback(Connection)")
   })

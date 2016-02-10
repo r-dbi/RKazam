@@ -67,7 +67,7 @@ setMethod(
 #' @export
 setMethod(
   "dbIsValid", "KazamDriver",
-  function(dbObj) {
+  function(dbObj, ...) {
     testthat::skip("Not yet implemented: dbIsValid(Driver)")
   })
 
