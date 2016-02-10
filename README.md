@@ -8,5 +8,5 @@ Install from GitHub via
 
 ```
 # install.packages("devtools")
-devtools::install_github(c("rstats-db/DBI", "krlmlr/RKazam"))
+devtools::install_github(c("rstats-db/DBI", "rstats-db/RKazam"))
 ```
