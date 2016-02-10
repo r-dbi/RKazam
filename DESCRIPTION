@@ -13,8 +13,9 @@ Encoding: UTF-8
 Imports:
     testthat,
     DBI,
-    DBItest,
     methods
+Suggests:
+    DBItest
 GitHub: https://github.com/krlmlr/RKazam
 Collate:
     'RKazam.R'
