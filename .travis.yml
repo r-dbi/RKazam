@@ -5,7 +5,7 @@ cache: packages
 
 r_github_packages:
   - rstats-db/DBI
-  - rstats-db/DBI-test@production
+  - rstats-db/DBItest@production
 
 notifications:
   email:
