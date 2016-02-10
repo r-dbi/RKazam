@@ -56,6 +56,8 @@
 
 \S4method{show}{KazamConnection}(object)
 
+\S4method{dbIsValid}{KazamConnection}(dbObj)
+
 \S4method{dbDisconnect}{KazamConnection}(conn)
 
 \S4method{dbSendQuery}{KazamConnection,character}(conn, statement, ...)
@@ -69,8 +71,7 @@
 \S4method{dbWriteTable}{KazamConnection,character,data.frame}(conn, name, value,
   overwrite = FALSE, append = FALSE, ...)
 
-\S4method{dbReadTable}{KazamConnection,character}(conn, name, row.names = NA,
-  check.names = TRUE, select.cols = "*")
+\S4method{dbReadTable}{KazamConnection,character}(conn, name)
 
 \S4method{dbListTables}{KazamConnection}(conn)
 
@@ -81,8 +82,6 @@
 \S4method{dbRemoveTable}{KazamConnection,character}(conn, name)
 
 \S4method{dbGetInfo}{KazamConnection}(dbObj, ...)
-
-\S4method{dbIsValid}{KazamConnection}(dbObj)
 
 \S4method{dbBegin}{KazamConnection}(conn)
 
