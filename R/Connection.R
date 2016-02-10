@@ -84,7 +84,7 @@ setMethod(
 #' @export
 setMethod(
   "dbWriteTable", c("KazamConnection", "character", "data.frame"),
-  function(conn, name, value, overwrite=FALSE, append=FALSE, ...) {
+  function(conn, name, value, overwrite = FALSE, append = FALSE, ..., row.names = NA) {
     testthat::skip("Not yet implemented: dbWriteTable(Connection, character, data.frame)")
   })
 
@@ -92,7 +92,7 @@ setMethod(
 #' @export
 setMethod(
   "dbReadTable", c("KazamConnection", "character"),
-  function(conn, name, ...) {
+  function(conn, name, ..., row.names = NA) {
     testthat::skip("Not yet implemented: dbReadTable(Connection, character)")
   })
 

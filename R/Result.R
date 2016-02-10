@@ -38,7 +38,7 @@ setMethod(
 #' @export
 setMethod(
   "dbFetch", "KazamResult",
-  function(res, n = -1, ...) {
+  function(res, n = -1, ..., row.names = NA) {
     testthat::skip("Not yet implemented: dbFetch(Result)")
   })
 
