@@ -89,6 +89,10 @@ setMethod(
 
 #' @rdname DBI
 #' @inheritParams DBI::dbWriteTable
+#' @param overwrite Allow overwriting the destination table. Cannot be
+#'   \code{TRUE} if \code{append} is also \code{TRUE}.
+#' @param append Allow appending to the destination table. Cannot be
+#'   \code{TRUE} if \code{overwrite} is also \code{TRUE}.
 #' @export
 setMethod(
   "dbWriteTable", c("KazamConnection", "character", "data.frame"),

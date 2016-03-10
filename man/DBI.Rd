@@ -138,6 +138,12 @@ typically include \code{user}, \code{password}, \code{dbname}, \code{host},
 
 \item{value}{a data.frame (or coercible to data.frame).}
 
+\item{overwrite}{Allow overwriting the destination table. Cannot be
+\code{TRUE} if \code{append} is also \code{TRUE}.}
+
+\item{append}{Allow appending to the destination table. Cannot be
+\code{TRUE} if \code{overwrite} is also \code{TRUE}.}
+
 \item{res}{An object inheriting from \code{\linkS4class{DBIResult}}.}
 
 \item{n}{maximum number of records to retrieve per fetch. Use \code{n = -1}
