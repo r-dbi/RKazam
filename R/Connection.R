@@ -15,6 +15,7 @@ setClass(
 )
 
 #' @rdname DBI
+#' @inheritParams methods::show
 setMethod(
   "show", "KazamConnection",
   function(object) {
@@ -23,6 +24,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbIsValid
 setMethod(
   "dbIsValid", "KazamConnection",
   function(dbObj) {
@@ -30,6 +32,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbDisconnect
 setMethod(
   "dbDisconnect", "KazamConnection",
   function(conn) {
@@ -42,6 +45,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbSendQuery
 setMethod(
   "dbSendQuery", c("KazamConnection", "character"),
   function(conn, statement, ...) {
@@ -49,6 +53,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbDataType
 setMethod(
   "dbDataType", "KazamConnection",
   function(dbObj, obj, ...) {
@@ -58,6 +63,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbQuoteString
 setMethod(
   "dbQuoteString", c("KazamConnection", "character"),
   function(conn, x, ...) {
@@ -66,6 +72,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbQuoteIdentifier
 setMethod(
   "dbQuoteIdentifier", c("KazamConnection", "character"),
   function(conn, x, ...) {
@@ -74,6 +81,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbWriteTable
 setMethod(
   "dbWriteTable", c("KazamConnection", "character", "data.frame"),
   function(conn, name, value, overwrite=FALSE, append=FALSE, ...) {
@@ -81,6 +89,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbReadTable
 setMethod(
   "dbReadTable", c("KazamConnection", "character"),
   function(conn, name) {
@@ -88,6 +97,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbListTables
 setMethod(
   "dbListTables", "KazamConnection",
   function(conn) {
@@ -95,6 +105,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbExistsTable
 setMethod(
   "dbExistsTable", c("KazamConnection", "character"),
   function(conn, name) {
@@ -102,6 +113,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbListFields
 setMethod(
   "dbListFields", c("KazamConnection", "character"),
   function(conn, name) {
@@ -109,6 +121,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbRemoveTable
 setMethod(
   "dbRemoveTable", c("KazamConnection", "character"),
   function(conn, name) {
@@ -116,6 +129,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbGetInfo
 setMethod(
   "dbGetInfo", "KazamConnection",
   function(dbObj, ...) {
@@ -123,6 +137,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbBegin
 setMethod(
   "dbBegin", "KazamConnection",
   function(conn) {
@@ -130,6 +145,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbCommit
 setMethod(
   "dbCommit", "KazamConnection",
   function(conn) {
@@ -137,6 +153,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbRollback
 setMethod(
   "dbRollback", "KazamConnection",
   function(conn) {

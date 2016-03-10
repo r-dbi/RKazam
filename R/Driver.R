@@ -27,6 +27,7 @@ Kazam <- function() {
 setClass("KazamDriver", contains = "DBIDriver")
 
 #' @rdname DBI
+#' @inheritParams methods::show
 setMethod(
   "show", "KazamDriver",
   function(object) {
@@ -35,6 +36,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbConnect
 setMethod(
   "dbConnect", "KazamDriver",
   function(drv, ...) {
@@ -43,6 +45,7 @@ setMethod(
 )
 
 #' @rdname DBI
+#' @inheritParams DBI::dbDataType
 setMethod(
   "dbDataType", "KazamDriver",
   function(dbObj, obj, ...) {
@@ -52,6 +55,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbDataType
 setMethod(
   "dbDataType", c("KazamDriver", "list"),
   function(dbObj, obj, ...) {
@@ -60,6 +64,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbIsValid
 setMethod(
   "dbIsValid", "KazamDriver",
   function(dbObj) {
@@ -67,6 +72,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbGetInfo
 setMethod(
   "dbGetInfo", "KazamDriver",
   function(dbObj, ...) {
