@@ -18,6 +18,7 @@ setClass(
 )
 
 #' @rdname DBI
+#' @inheritParams methods::show
 #' @export
 setMethod(
   "show", "KazamResult",
@@ -27,6 +28,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbClearResult
 #' @export
 setMethod(
   "dbClearResult", "KazamResult",
@@ -35,6 +37,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbFetch
 #' @export
 setMethod(
   "dbFetch", "KazamResult",
@@ -43,6 +46,7 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbHasCompleted
 #' @export
 setMethod(
   "dbHasCompleted", "KazamResult",
@@ -51,14 +55,17 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbGetInfo
 #' @export
 setMethod(
   "dbGetInfo", "KazamResult",
   function(dbObj, ...) {
-    testthat::skip("Not yet implemented: dbGetInfo(Result)")
+    # Optional
+    getMethod("dbGetInfo", "DBIResult", asNamespace("DBI"))(dbObj, ...)
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbIsValid
 #' @export
 setMethod(
   "dbIsValid", "KazamResult",
@@ -67,15 +74,16 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbGetStatement
 #' @export
 setMethod(
   "dbGetStatement", "KazamResult",
   function(res, ...) {
-    # Optional
-    getMethod("dbGetStatement", "DBIResult", asNamespace("DBI"))(res, ...)
+    testthat::skip("Not yet implemented: dbGetStatement(Result)")
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbColumnInfo
 #' @export
 setMethod(
   "dbColumnInfo", "KazamResult",
@@ -84,24 +92,25 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbGetRowCount
 #' @export
 setMethod(
   "dbGetRowCount", "KazamResult",
   function(res, ...) {
-    # Optional
-    getMethod("dbGetRowCount", "DBIResult", asNamespace("DBI"))(res, ...)
+    testthat::skip("Not yet implemented: dbGetRowCount(Result)")
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::getRowsAffected
 #' @export
 setMethod(
   "dbGetRowsAffected", "KazamResult",
   function(res, ...) {
-    # Optional
-    getMethod("dbGetRowsAffected", "DBIResult", asNamespace("DBI"))(res, ...)
+    testthat::skip("Not yet implemented: dbGetRowsAffected(Result)")
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbBind
 #' @export
 setMethod(
   "dbBind", "KazamResult",
