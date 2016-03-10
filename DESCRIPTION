@@ -14,10 +14,12 @@ Imports:
     testthat,
     DBI,
     methods
+Suggests:
+    DBItest
 GitHub: https://github.com/krlmlr/RKazam
 Collate:
     'RKazam.R'
     'Driver.R'
     'Connection.R'
     'Result.R'
-RoxygenNote: 5.0.1.9000
+RoxygenNote: 5.0.1
