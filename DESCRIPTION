@@ -1,7 +1,7 @@
 Package: RKazam
 Title: Boilerplate for implementing a DBI back end
 Version: 0.0-0
-Authors@R: as.person("Kirill Müller <krlmlr+r@mailbox.org> [aut, cre]")
+Authors@R: person(given = "Kirill", family = "Müller", role = c("aut", "cre"), email = "krlmlr+r@mailbox.org")
 Description: A dummy DBI back end that provides access to a hypothetical
     data source named "Kazam", intended to be used as boilerplate for
     implementing DBI back ends from scratch.
