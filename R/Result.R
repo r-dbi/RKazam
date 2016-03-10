@@ -60,7 +60,8 @@ setMethod(
 setMethod(
   "dbGetInfo", "KazamResult",
   function(dbObj, ...) {
-    testthat::skip("Not yet implemented: dbGetInfo(Result)")
+    # Optional
+    getMethod("dbGetInfo", "DBIResult", asNamespace("DBI"))(dbObj, ...)
   })
 
 #' @rdname DBI
@@ -78,8 +79,7 @@ setMethod(
 setMethod(
   "dbGetStatement", "KazamResult",
   function(res, ...) {
-    # Optional
-    getMethod("dbGetStatement", "DBIResult", asNamespace("DBI"))(res, ...)
+    testthat::skip("Not yet implemented: dbGetStatement(Result)")
   })
 
 #' @rdname DBI
@@ -97,8 +97,7 @@ setMethod(
 setMethod(
   "dbGetRowCount", "KazamResult",
   function(res, ...) {
-    # Optional
-    getMethod("dbGetRowCount", "DBIResult", asNamespace("DBI"))(res, ...)
+    testthat::skip("Not yet implemented: dbGetRowCount(Result)")
   })
 
 #' @rdname DBI
@@ -107,8 +106,7 @@ setMethod(
 setMethod(
   "dbGetRowsAffected", "KazamResult",
   function(res, ...) {
-    # Optional
-    getMethod("dbGetRowsAffected", "DBIResult", asNamespace("DBI"))(res, ...)
+    testthat::skip("Not yet implemented: dbGetRowsAffected(Result)")
   })
 
 #' @rdname DBI
