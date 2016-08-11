@@ -36,6 +36,7 @@
 \alias{dbRemoveTable,KazamConnection,character-method}
 \alias{dbRollback,KazamConnection-method}
 \alias{dbSendQuery,KazamConnection,character-method}
+\alias{dbSendStatement,KazamConnection,character-method}
 \alias{dbWriteTable,KazamConnection,character,data.frame-method}
 \alias{show,KazamConnection-method}
 \alias{show,KazamDriver-method}
@@ -61,6 +62,8 @@
 \S4method{dbDisconnect}{KazamConnection}(conn)
 
 \S4method{dbSendQuery}{KazamConnection,character}(conn, statement, ...)
+
+\S4method{dbSendStatement}{KazamConnection,character}(conn, statement, ...)
 
 \S4method{dbDataType}{KazamConnection,ANY}(dbObj, obj, ...)
 

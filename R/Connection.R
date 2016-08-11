@@ -57,6 +57,15 @@ setMethod(
   })
 
 #' @rdname DBI
+#' @inheritParams DBI::dbSendStatement
+#' @export
+setMethod(
+  "dbSendStatement", c("KazamConnection", "character"),
+  function(conn, statement, ...) {
+    KazamResult(connection = conn, statement = statement)
+  })
+
+#' @rdname DBI
 #' @inheritParams DBI::dbDataType
 #' @export
 setMethod(
