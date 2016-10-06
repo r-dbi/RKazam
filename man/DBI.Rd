@@ -51,15 +51,15 @@
 
 \S4method{dbDataType}{KazamDriver,list}(dbObj, obj, ...)
 
-\S4method{dbIsValid}{KazamDriver}(dbObj)
+\S4method{dbIsValid}{KazamDriver}(dbObj, ...)
 
 \S4method{dbGetInfo}{KazamDriver}(dbObj, ...)
 
 \S4method{show}{KazamConnection}(object)
 
-\S4method{dbIsValid}{KazamConnection}(dbObj)
+\S4method{dbIsValid}{KazamConnection}(dbObj, ...)
 
-\S4method{dbDisconnect}{KazamConnection}(conn)
+\S4method{dbDisconnect}{KazamConnection}(conn, ...)
 
 \S4method{dbSendQuery}{KazamConnection,character}(conn, statement, ...)
 
@@ -74,23 +74,23 @@
 \S4method{dbWriteTable}{KazamConnection,character,data.frame}(conn, name, value,
   overwrite = FALSE, append = FALSE, ...)
 
-\S4method{dbReadTable}{KazamConnection,character}(conn, name)
+\S4method{dbReadTable}{KazamConnection,character}(conn, name, ...)
 
-\S4method{dbListTables}{KazamConnection}(conn)
+\S4method{dbListTables}{KazamConnection}(conn, ...)
 
-\S4method{dbExistsTable}{KazamConnection,character}(conn, name)
+\S4method{dbExistsTable}{KazamConnection,character}(conn, name, ...)
 
-\S4method{dbListFields}{KazamConnection,character}(conn, name)
+\S4method{dbListFields}{KazamConnection,character}(conn, name, ...)
 
-\S4method{dbRemoveTable}{KazamConnection,character}(conn, name)
+\S4method{dbRemoveTable}{KazamConnection,character}(conn, name, ...)
 
 \S4method{dbGetInfo}{KazamConnection}(dbObj, ...)
 
-\S4method{dbBegin}{KazamConnection}(conn)
+\S4method{dbBegin}{KazamConnection}(conn, ...)
 
-\S4method{dbCommit}{KazamConnection}(conn)
+\S4method{dbCommit}{KazamConnection}(conn, ...)
 
-\S4method{dbRollback}{KazamConnection}(conn)
+\S4method{dbRollback}{KazamConnection}(conn, ...)
 
 \S4method{show}{KazamResult}(object)
 
@@ -102,7 +102,7 @@
 
 \S4method{dbGetInfo}{KazamResult}(dbObj, ...)
 
-\S4method{dbIsValid}{KazamResult}(dbObj)
+\S4method{dbIsValid}{KazamResult}(dbObj, ...)
 
 \S4method{dbGetStatement}{KazamResult}(res, ...)
 
@@ -131,7 +131,7 @@ or \code{\linkS4class{DBIConnection}}}
 \item{obj}{An R object whose SQL type we want to determine.}
 
 \item{conn}{A \code{\linkS4class{DBIConnection}} object, as produced by
-\code{\link{dbConnect}}.}
+\code{\link[=dbConnect]{dbConnect()}}.}
 
 \item{statement}{a character vector of length 1 containing SQL.}
 

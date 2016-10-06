@@ -5,21 +5,21 @@ Authors@R: person(given = "Kirill", family = "Müller", role = c("aut", "cre"), 
 Description: A dummy DBI back end that provides access to a hypothetical
     data source named "Kazam", intended to be used as boilerplate for
     implementing DBI back ends from scratch.
-Depends:
+Depends: 
     R (>= 3.0.0)
 License: GPL-3
 LazyData: true
 Encoding: UTF-8
-Imports:
+Imports: 
     testthat,
     DBI,
     methods
-Suggests:
+Suggests: 
     DBItest
 GitHub: https://github.com/krlmlr/RKazam
-Collate:
+Collate: 
     'RKazam.R'
     'Driver.R'
     'Connection.R'
     'Result.R'
-RoxygenNote: 5.0.1
+RoxygenNote: 5.0.1.9000
