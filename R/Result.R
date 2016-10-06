@@ -69,7 +69,7 @@ setMethod(
 #' @export
 setMethod(
   "dbIsValid", "KazamResult",
-  function(dbObj) {
+  function(dbObj, ...) {
     testthat::skip("Not yet implemented: dbIsValid(Result)")
   })
 
