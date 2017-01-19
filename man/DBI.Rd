@@ -3,44 +3,44 @@
 \docType{class}
 \name{DBI}
 \alias{DBI}
-\alias{KazamConnection-class}
 \alias{KazamDriver-class}
-\alias{KazamResult-class}
-\alias{dbBegin,KazamConnection-method}
-\alias{dbBind,KazamResult-method}
-\alias{dbClearResult,KazamResult-method}
-\alias{dbColumnInfo,KazamResult-method}
-\alias{dbCommit,KazamConnection-method}
+\alias{show,KazamDriver-method}
 \alias{dbConnect,KazamDriver-method}
-\alias{dbDataType,KazamConnection,ANY-method}
 \alias{dbDataType,KazamDriver,ANY-method}
 \alias{dbDataType,KazamDriver,list-method}
-\alias{dbDisconnect,KazamConnection-method}
-\alias{dbExistsTable,KazamConnection,character-method}
-\alias{dbFetch,KazamResult-method}
-\alias{dbGetInfo,KazamConnection-method}
-\alias{dbGetInfo,KazamDriver-method}
-\alias{dbGetInfo,KazamResult-method}
-\alias{dbGetRowCount,KazamResult-method}
-\alias{dbGetRowsAffected,KazamResult-method}
-\alias{dbGetStatement,KazamResult-method}
-\alias{dbHasCompleted,KazamResult-method}
-\alias{dbIsValid,KazamConnection-method}
 \alias{dbIsValid,KazamDriver-method}
-\alias{dbIsValid,KazamResult-method}
-\alias{dbListFields,KazamConnection,character-method}
-\alias{dbListTables,KazamConnection-method}
-\alias{dbQuoteIdentifier,KazamConnection,character-method}
-\alias{dbQuoteString,KazamConnection,character-method}
-\alias{dbReadTable,KazamConnection,character-method}
-\alias{dbRemoveTable,KazamConnection,character-method}
-\alias{dbRollback,KazamConnection-method}
+\alias{dbGetInfo,KazamDriver-method}
+\alias{KazamConnection-class}
+\alias{show,KazamConnection-method}
+\alias{dbIsValid,KazamConnection-method}
+\alias{dbDisconnect,KazamConnection-method}
 \alias{dbSendQuery,KazamConnection,character-method}
 \alias{dbSendStatement,KazamConnection,character-method}
+\alias{dbDataType,KazamConnection,ANY-method}
+\alias{dbQuoteString,KazamConnection,character-method}
+\alias{dbQuoteIdentifier,KazamConnection,character-method}
 \alias{dbWriteTable,KazamConnection,character,data.frame-method}
-\alias{show,KazamConnection-method}
-\alias{show,KazamDriver-method}
+\alias{dbReadTable,KazamConnection,character-method}
+\alias{dbListTables,KazamConnection-method}
+\alias{dbExistsTable,KazamConnection,character-method}
+\alias{dbListFields,KazamConnection,character-method}
+\alias{dbRemoveTable,KazamConnection,character-method}
+\alias{dbGetInfo,KazamConnection-method}
+\alias{dbBegin,KazamConnection-method}
+\alias{dbCommit,KazamConnection-method}
+\alias{dbRollback,KazamConnection-method}
+\alias{KazamResult-class}
 \alias{show,KazamResult-method}
+\alias{dbClearResult,KazamResult-method}
+\alias{dbFetch,KazamResult-method}
+\alias{dbHasCompleted,KazamResult-method}
+\alias{dbGetInfo,KazamResult-method}
+\alias{dbIsValid,KazamResult-method}
+\alias{dbGetStatement,KazamResult-method}
+\alias{dbColumnInfo,KazamResult-method}
+\alias{dbGetRowCount,KazamResult-method}
+\alias{dbGetRowsAffected,KazamResult-method}
+\alias{dbBind,KazamResult-method}
 \title{DBI methods}
 \usage{
 \S4method{show}{KazamDriver}(object)
@@ -131,7 +131,7 @@ or \code{\linkS4class{DBIConnection}}}
 \item{obj}{An R object whose SQL type we want to determine.}
 
 \item{conn}{A \code{\linkS4class{DBIConnection}} object, as produced by
-\code{\link[=dbConnect]{dbConnect()}}.}
+\code{\link{dbConnect}}.}
 
 \item{statement}{a character vector of length 1 containing SQL.}
 
@@ -158,4 +158,3 @@ special values.}
 \description{
 Implementations of pure virtual functions defined in the \code{DBI} package.
 }
-
