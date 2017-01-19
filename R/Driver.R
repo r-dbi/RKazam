@@ -3,7 +3,7 @@ NULL
 
 #' DBI methods
 #'
-#' Implementations of pure virtual functions defined in the \code{DBI} package.
+#' Implementations of pure virtual functions defined in the `DBI` package.
 #' @name DBI
 NULL
 
