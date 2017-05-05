@@ -101,7 +101,7 @@ setMethod(
   })
 
 #' @rdname DBI
-#' @inheritParams DBI::getRowsAffected
+#' @inheritParams DBI::dbGetRowsAffected
 #' @export
 setMethod(
   "dbGetRowsAffected", "KazamResult",
