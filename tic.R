@@ -1,6 +1,6 @@
 get_stage("after_success") %>%
   add_step(step_hello_world()) %>%
-  add_step(step_run_covr())
+  add_step(step_run_code(covr::codecov()))
 
 if (ci()$get_branch() == "production" && Sys.getenv("BUILD_PKGDOWN") != "") {
   get_stage("deploy") %>%
