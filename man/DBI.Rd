@@ -71,8 +71,8 @@
 
 \S4method{dbQuoteIdentifier}{KazamConnection,character}(conn, x, ...)
 
-\S4method{dbWriteTable}{KazamConnection,character,data.frame}(conn, name, value,
-  overwrite = FALSE, append = FALSE, ...)
+\S4method{dbWriteTable}{KazamConnection,character,data.frame}(conn, name,
+  value, overwrite = FALSE, append = FALSE, ...)
 
 \S4method{dbReadTable}{KazamConnection,character}(conn, name, ...)
 
