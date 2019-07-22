@@ -1,13 +1,10 @@
-add_package_checks()
+do_package_checks()
 
-get_stage("deploy") %>%
-  add_step(step_build_pkgdown())
+if (ci_has_env("DEV_VERSIONS")) {
+  get_stage("install") %>%
+    add_step(step_install_github(c("r-dbi/DBI")))
+}
 
-if (Sys.getenv("id_rsa") != "" && Sys.getenv("BUILD_PKGDOWN") != "") {
-  get_stage("before_deploy") %>%
-    add_step(step_install_ssh_keys()) %>%
-    add_step(step_test_ssh())
-
-  get_stage("deploy") %>%
-    add_step(step_push_deploy())
+if (ci_has_env("BUILD_PKGDOWN") && !ci_is_tag()) {
+  do_pkgdown()
 }
