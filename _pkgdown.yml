@@ -6,3 +6,7 @@ home:
   links:
   - text: Report a security vulnerability
     href: https://github.com/r-dbi/RKazam/security.html
+
+authors:
+  Kirill Müller:
+    href: http://krlmlr.info
