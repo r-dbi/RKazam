@@ -157,8 +157,7 @@
 <span class='fu'>dbQuoteIdentifier</span>(<span class='no'>conn</span>, <span class='no'>x</span>, <span class='no'>...</span>)
 
 <span class='co'># S4 method for KazamConnection,character,data.frame</span>
-<span class='fu'>dbWriteTable</span>(<span class='no'>conn</span>, <span class='no'>name</span>,
-  <span class='no'>value</span>, <span class='kw'>overwrite</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>append</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='no'>...</span>)
+<span class='fu'>dbWriteTable</span>(<span class='no'>conn</span>, <span class='no'>name</span>, <span class='no'>value</span>, <span class='kw'>overwrite</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>append</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='no'>...</span>)
 
 <span class='co'># S4 method for KazamConnection,character</span>
 <span class='fu'>dbReadTable</span>(<span class='no'>conn</span>, <span class='no'>name</span>, <span class='no'>...</span>)
@@ -251,7 +250,7 @@ or DBIConnection</p></td>
     <tr>
       <th>conn</th>
       <td><p>A DBIConnection object, as returned by
-<code>dbConnect()</code>.</p></td>
+<code><a href='https://rdrr.io/pkg/DBI/man/dbConnect.html'>dbConnect()</a></code>.</p></td>
     </tr>
     <tr>
       <th>statement</th>
@@ -264,7 +263,7 @@ or DBIConnection</p></td>
     <tr>
       <th>name</th>
       <td><p>A character string specifying the unquoted DBMS table name,
-or the result of a call to <code>dbQuoteIdentifier()</code>.</p></td>
+or the result of a call to <code><a href='https://rdrr.io/pkg/DBI/man/dbQuoteIdentifier.html'>dbQuoteIdentifier()</a></code>.</p></td>
     </tr>
     <tr>
       <th>value</th>
