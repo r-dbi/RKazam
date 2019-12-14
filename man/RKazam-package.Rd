@@ -6,12 +6,20 @@
 \alias{RKazam-package}
 \title{RKazam: Boilerplate for implementing a DBI back end}
 \description{
-A dummy DBI back end that provides access to a hypothetical
-    data source named "Kazam", intended to be used as boilerplate for
-    implementing DBI back ends from scratch.
+A dummy DBI back end that provides access to a
+    hypothetical data source named "Kazam", intended to be used as
+    boilerplate for implementing DBI back ends from scratch.
 }
 \details{
 TBD.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://rkazam.r-dbi.org}
+  \item \url{https://github.com/krlmlr/RKazam}
+}
+
 }
 \author{
 \strong{Maintainer}: Kirill Müller \email{krlmlr+r@mailbox.org}
