@@ -1,6 +1,8 @@
 # RKazam
 
-[![Travis-CI Build Status](https://travis-ci.org/r-dbi/RKazam.svg?branch=master)](https://travis-ci.org/r-dbi/RKazam)
+<!-- badges: start -->
+[![rcc](https://github.com/r-dbi/RKazam/workflows/rcc/badge.svg)](https://github.com/r-dbi/RKazam/actions)
+<!-- badges: end -->
 
 RKazam is an DBI-compliant interface to the hypothetical Kazam database. It is intended to be used as boilerplate for new DBI backends.
 
