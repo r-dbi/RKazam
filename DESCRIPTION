@@ -14,14 +14,12 @@ URL: https://rkazam.r-dbi.org, https://github.com/krlmlr/RKazam
 Depends: 
     R (>= 3.0.0)
 Imports: 
-    DBI (>= 1.0.0.9003),
+    DBI (>= 1.1.0),
     methods,
     testthat
 Suggests: 
     covr,
     DBItest
-Remotes: 
-    r-dbi/DBI
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
