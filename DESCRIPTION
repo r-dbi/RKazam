@@ -18,6 +18,7 @@ Imports:
     methods,
     testthat
 Suggests: 
+    covr,
     DBItest
 Remotes: 
     r-dbi/DBI
