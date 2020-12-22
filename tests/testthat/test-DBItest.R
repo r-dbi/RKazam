@@ -1,4 +1,5 @@
-DBItest::make_context(Kazam(), list(), tweaks = DBItest::tweaks(), name = "RKazam")
-DBItest::test_all(c(
-  NULL
-))
+if (identical(Sys.getenv("NOT_CRAN"), "true")) {
+
+  DBItest::test_all()
+
+}

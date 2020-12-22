@@ -87,3 +87,9 @@ setMethod(
   function(dbObj, ...) {
     testthat::skip("Not yet implemented: dbGetInfo(Driver)")
   })
+
+#' @export
+DBI::dbCanConnect
+
+#' @export
+DBI::Id

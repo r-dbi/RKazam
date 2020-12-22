@@ -71,8 +71,7 @@
 
 \S4method{dbQuoteIdentifier}{KazamConnection,character}(conn, x, ...)
 
-\S4method{dbWriteTable}{KazamConnection,character,data.frame}(conn, name,
-  value, overwrite = FALSE, append = FALSE, ...)
+\S4method{dbWriteTable}{KazamConnection,character,data.frame}(conn, name, value, overwrite = FALSE, append = FALSE, ...)
 
 \S4method{dbReadTable}{KazamConnection,character}(conn, name, ...)
 
@@ -131,14 +130,14 @@ or \linkS4class{DBIConnection}}
 \item{obj}{An R object whose SQL type we want to determine.}
 
 \item{conn}{A \linkS4class{DBIConnection} object, as returned by
-\code{\link[=dbConnect]{dbConnect()}}.}
+\code{\link[DBI:dbConnect]{dbConnect()}}.}
 
 \item{statement}{a character string containing SQL.}
 
 \item{x}{A character vector to quote as string.}
 
 \item{name}{A character string specifying the unquoted DBMS table name,
-or the result of a call to \code{\link[=dbQuoteIdentifier]{dbQuoteIdentifier()}}.}
+or the result of a call to \code{\link[DBI:dbQuoteIdentifier]{dbQuoteIdentifier()}}.}
 
 \item{value}{a \link{data.frame} (or coercible to data.frame).}
 
