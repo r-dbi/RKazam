@@ -1,3 +1,8 @@
+# RKazam 0.0.0.9002 (2020-12-22)
+
+- Converted to template repository on GitHub (#8).
+
+
 # RKazam 0.0.0.9001 (2020-12-05)
 
 - Switch to GitHub Actions (#9).
