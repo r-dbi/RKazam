@@ -42,8 +42,7 @@ setMethod(
 setMethod(
   "dbConnect", "KazamDriver",
   function(drv, ...) {
-    testthat::skip("Not connecting")
-    # TODO: Remove skip() call
+    # TODO: Implement
     KazamConnection()
   }
 )
