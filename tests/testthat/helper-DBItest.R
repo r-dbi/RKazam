@@ -1,11 +1,20 @@
 DBItest::make_context(
   Kazam(),
   list(),
-  tweaks = DBItest::tweaks(),
+  tweaks = DBItest::tweaks(
+    dbitest_version = "1.7.2"
+  ),
   name = "RKazam",
   default_skip = c(
-    if (packageVersion("DBItest") < "1.7.0.9006") "reexport",
-
+    # TODO: Remove when dbDisconnect() is implemented
+    "can_disconnect",
+    "disconnect_closed_connection",
+    "disconnect_invalid_connection",
+    # TODO: Remove when dbIsValid() is implemented
+    "is_valid_connection",
+    "is_valid_stale_connection",
+    # TODO: Understand why test fails in R < 3.6
+    if (getRversion() < "3.6") "connect_format",
     NULL
   )
 )
