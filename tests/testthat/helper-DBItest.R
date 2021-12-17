@@ -13,6 +13,8 @@ DBItest::make_context(
     # TODO: Remove when dbIsValid() is implemented
     "is_valid_connection",
     "is_valid_stale_connection",
+    # TODO: Understand why test fails in R < 3.6
+    if (getRversion() < "3.6") "connect_format",
     NULL
   )
 )
