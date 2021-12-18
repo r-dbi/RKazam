@@ -1,3 +1,14 @@
+<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
+
+# RKazam 0.0.0.9003 (2021-12-18)
+
+- Make method definition more similar to S3 (#14).
+- Compatibility with DBItest 1.7.2 (#13).
+- Switch to CC0 license (#7).
+- Prepare for CII badge (#6).
+- Add comment pointing to implementations that help grow a data frame (#3).
+
+
 # RKazam 0.0.0.9002 (2020-12-22)
 
 - Converted to template repository on GitHub (#8).
