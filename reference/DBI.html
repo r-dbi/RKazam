@@ -180,13 +180,7 @@ or DBIConnection</p></dd>
 <dt>obj</dt>
 <dd><p>An R object whose SQL type we want to determine.</p></dd>
 <dt>name</dt>
-<dd><p>The table name, passed on to <code><a href="https://dbi.r-dbi.org/reference/dbQuoteIdentifier.html" class="external-link">dbQuoteIdentifier()</a></code>. Options are:</p><ul><li><p>a character string with the unquoted DBMS table name,
-e.g. <code>"table_name"</code>,</p></li>
-<li><p>a call to <code><a href="https://dbi.r-dbi.org/reference/Id.html" class="external-link">Id()</a></code> with components to the fully qualified table name,
-e.g. <code>Id(schema = "my_schema", table = "table_name")</code></p></li>
-<li><p>a call to <code><a href="https://dbi.r-dbi.org/reference/SQL.html" class="external-link">SQL()</a></code> with the quoted and fully qualified table name
-given verbatim, e.g. <code>SQL('"my_schema"."table_name"')</code></p></li>
-</ul></dd>
+<dd><p>A character string specifying a DBMS table name.</p></dd>
 <dt>n</dt>
 <dd><p>maximum number of records to retrieve per fetch. Use <code>n = -1</code>
 or <code>n = Inf</code>
