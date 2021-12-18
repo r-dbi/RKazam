@@ -16,4 +16,3 @@ setClass(
     statement = "character"
   )
 )
-

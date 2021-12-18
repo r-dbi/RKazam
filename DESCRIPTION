@@ -67,3 +67,5 @@ Collate:
     'show_KazamConnection.R'
     'show_KazamDriver.R'
     'show_KazamResult.R'
+Config/autostyle/scope: line_breaks
+Config/autostyle/strict: false
