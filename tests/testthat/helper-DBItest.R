@@ -1,9 +1,9 @@
 DBItest::make_context(
   Kazam(),
   list(),
-  tweaks = DBItest::tweaks(
+  tweaks = suppressWarnings(DBItest::tweaks(
     dbitest_version = "1.7.2"
-  ),
+  )),
   name = "RKazam",
   default_skip = c(
     # TODO: Remove when dbDisconnect() is implemented
