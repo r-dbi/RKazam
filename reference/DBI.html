@@ -53,110 +53,110 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="co"># S4 method for KazamConnection</span>
-<span class="fu">dbBegin</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamResult</span>
-<span class="fu">dbBind</span><span class="op">(</span><span class="va">res</span>, <span class="va">params</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamResult</span>
-<span class="fu">dbClearResult</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamResult</span>
-<span class="fu">dbColumnInfo</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection</span>
-<span class="fu">dbCommit</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamDriver</span>
-<span class="fu">dbConnect</span><span class="op">(</span><span class="va">drv</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection,ANY</span>
-<span class="fu">dbDataType</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">obj</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamDriver,ANY</span>
-<span class="fu">dbDataType</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">obj</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamDriver,list</span>
-<span class="fu">dbDataType</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">obj</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection</span>
-<span class="fu">dbDisconnect</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection,character</span>
-<span class="fu">dbExistsTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamResult</span>
-<span class="fu">dbFetch</span><span class="op">(</span><span class="va">res</span>, n <span class="op">=</span> <span class="op">-</span><span class="fl">1</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection</span>
-<span class="fu">dbGetInfo</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamDriver</span>
-<span class="fu">dbGetInfo</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamResult</span>
-<span class="fu">dbGetInfo</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamResult</span>
-<span class="fu">dbGetRowCount</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamResult</span>
-<span class="fu">dbGetRowsAffected</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamResult</span>
-<span class="fu">dbGetStatement</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamResult</span>
-<span class="fu">dbHasCompleted</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection</span>
-<span class="fu">dbIsValid</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamDriver</span>
-<span class="fu">dbIsValid</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamResult</span>
-<span class="fu">dbIsValid</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection,character</span>
-<span class="fu">dbListFields</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection</span>
-<span class="fu">dbListTables</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection,character</span>
-<span class="fu">dbQuoteIdentifier</span><span class="op">(</span><span class="va">conn</span>, <span class="va">x</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection,character</span>
-<span class="fu">dbQuoteString</span><span class="op">(</span><span class="va">conn</span>, <span class="va">x</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection,character</span>
-<span class="fu">dbReadTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection,character</span>
-<span class="fu">dbRemoveTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection</span>
-<span class="fu">dbRollback</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection,character</span>
-<span class="fu">dbSendQuery</span><span class="op">(</span><span class="va">conn</span>, <span class="va">statement</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection,character</span>
-<span class="fu">dbSendStatement</span><span class="op">(</span><span class="va">conn</span>, <span class="va">statement</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection,character,data.frame</span>
-<span class="fu">dbWriteTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">value</span>, overwrite <span class="op">=</span> <span class="cn">FALSE</span>, append <span class="op">=</span> <span class="cn">FALSE</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamConnection</span>
-<span class="fu">show</span><span class="op">(</span><span class="va">object</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamDriver</span>
-<span class="fu">show</span><span class="op">(</span><span class="va">object</span><span class="op">)</span>
-
-<span class="co"># S4 method for KazamResult</span>
-<span class="fu">show</span><span class="op">(</span><span class="va">object</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="co"># S4 method for KazamConnection</span></span>
+<span><span class="fu">dbBegin</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResult</span></span>
+<span><span class="fu">dbBind</span><span class="op">(</span><span class="va">res</span>, <span class="va">params</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResult</span></span>
+<span><span class="fu">dbClearResult</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResult</span></span>
+<span><span class="fu">dbColumnInfo</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection</span></span>
+<span><span class="fu">dbCommit</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamDriver</span></span>
+<span><span class="fu">dbConnect</span><span class="op">(</span><span class="va">drv</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection,ANY</span></span>
+<span><span class="fu">dbDataType</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">obj</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamDriver,ANY</span></span>
+<span><span class="fu">dbDataType</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">obj</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamDriver,list</span></span>
+<span><span class="fu">dbDataType</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">obj</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection</span></span>
+<span><span class="fu">dbDisconnect</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection,character</span></span>
+<span><span class="fu">dbExistsTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResult</span></span>
+<span><span class="fu">dbFetch</span><span class="op">(</span><span class="va">res</span>, n <span class="op">=</span> <span class="op">-</span><span class="fl">1</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection</span></span>
+<span><span class="fu">dbGetInfo</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamDriver</span></span>
+<span><span class="fu">dbGetInfo</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResult</span></span>
+<span><span class="fu">dbGetInfo</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResult</span></span>
+<span><span class="fu">dbGetRowCount</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResult</span></span>
+<span><span class="fu">dbGetRowsAffected</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResult</span></span>
+<span><span class="fu">dbGetStatement</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResult</span></span>
+<span><span class="fu">dbHasCompleted</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection</span></span>
+<span><span class="fu">dbIsValid</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamDriver</span></span>
+<span><span class="fu">dbIsValid</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResult</span></span>
+<span><span class="fu">dbIsValid</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection,character</span></span>
+<span><span class="fu">dbListFields</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection</span></span>
+<span><span class="fu">dbListTables</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection,character</span></span>
+<span><span class="fu">dbQuoteIdentifier</span><span class="op">(</span><span class="va">conn</span>, <span class="va">x</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection,character</span></span>
+<span><span class="fu">dbQuoteString</span><span class="op">(</span><span class="va">conn</span>, <span class="va">x</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection,character</span></span>
+<span><span class="fu">dbReadTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection,character</span></span>
+<span><span class="fu">dbRemoveTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection</span></span>
+<span><span class="fu">dbRollback</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection,character</span></span>
+<span><span class="fu">dbSendQuery</span><span class="op">(</span><span class="va">conn</span>, <span class="va">statement</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection,character</span></span>
+<span><span class="fu">dbSendStatement</span><span class="op">(</span><span class="va">conn</span>, <span class="va">statement</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection,character,data.frame</span></span>
+<span><span class="fu">dbWriteTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">value</span>, overwrite <span class="op">=</span> <span class="cn">FALSE</span>, append <span class="op">=</span> <span class="cn">FALSE</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection</span></span>
+<span><span class="fu">show</span><span class="op">(</span><span class="va">object</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamDriver</span></span>
+<span><span class="fu">show</span><span class="op">(</span><span class="va">object</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResult</span></span>
+<span><span class="fu">show</span><span class="op">(</span><span class="va">object</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -164,21 +164,35 @@
     <dl><dt>conn</dt>
 <dd><p>A DBIConnection object, as returned by
 <code><a href="https://dbi.r-dbi.org/reference/dbConnect.html" class="external-link">dbConnect()</a></code>.</p></dd>
+
+
 <dt>...</dt>
 <dd><p>Other parameters passed on to methods.</p></dd>
+
+
 <dt>res</dt>
 <dd><p>An object inheriting from DBIResult.</p></dd>
+
+
 <dt>params</dt>
 <dd><p>A list of bindings, named or unnamed.</p></dd>
+
+
 <dt>drv</dt>
 <dd><p>an object that inherits from DBIDriver,
 or an existing DBIConnection
 object (in order to clone an existing connection).</p></dd>
+
+
 <dt>dbObj</dt>
 <dd><p>A object inheriting from DBIDriver
 or DBIConnection</p></dd>
+
+
 <dt>obj</dt>
 <dd><p>An R object whose SQL type we want to determine.</p></dd>
+
+
 <dt>name</dt>
 <dd><p>The table name, passed on to <code><a href="https://dbi.r-dbi.org/reference/dbQuoteIdentifier.html" class="external-link">dbQuoteIdentifier()</a></code>. Options are:</p><ul><li><p>a character string with the unquoted DBMS table name,
 e.g. <code>"table_name"</code>,</p></li>
@@ -187,25 +201,40 @@ e.g. <code>Id(schema = "my_schema", table = "table_name")</code></p></li>
 <li><p>a call to <code><a href="https://dbi.r-dbi.org/reference/SQL.html" class="external-link">SQL()</a></code> with the quoted and fully qualified table name
 given verbatim, e.g. <code>SQL('"my_schema"."table_name"')</code></p></li>
 </ul></dd>
+
+
 <dt>n</dt>
 <dd><p>maximum number of records to retrieve per fetch. Use <code>n = -1</code>
 or <code>n = Inf</code>
 to retrieve all pending records.  Some implementations may recognize other
 special values.</p></dd>
+
+
 <dt>x</dt>
 <dd><p>A character vector, <a href="https://dbi.r-dbi.org/reference/SQL.html" class="external-link">SQL</a> or <a href="https://dbi.r-dbi.org/reference/Id.html" class="external-link">Id</a> object to quote as identifier.</p></dd>
+
+
 <dt>statement</dt>
 <dd><p>a character string containing SQL.</p></dd>
+
+
 <dt>value</dt>
 <dd><p>a <a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a> (or coercible to data.frame).</p></dd>
+
+
 <dt>overwrite</dt>
 <dd><p>Allow overwriting the destination table. Cannot be
 <code>TRUE</code> if <code>append</code> is also <code>TRUE</code>.</p></dd>
+
+
 <dt>append</dt>
 <dd><p>Allow appending to the destination table. Cannot be
 <code>TRUE</code> if <code>overwrite</code> is also <code>TRUE</code>.</p></dd>
+
+
 <dt>object</dt>
 <dd><p>Any R object</p></dd>
+
 </dl></div>
 
   </div>
@@ -220,7 +249,7 @@ special values.</p></dd>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.9000.</p>
 </div>
 
       </footer></div>
