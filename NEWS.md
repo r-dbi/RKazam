@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# RKazam 0.0.0.9004 (2022-12-24)
+
+- Harmonize yaml formatting.
+
+- Revert changes to matrix section.
+
+
 # RKazam 0.0.0.9003 (2021-12-18)
 
 - Make method definition more similar to S3 (#14).
