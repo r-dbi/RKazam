@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# RKazam 0.0.0.9005 (2022-12-30)
+
+- Internal changes only.
+
+
 # RKazam 0.0.0.9004 (2022-12-24)
 
 - Harmonize yaml formatting.

@@ -1,6 +1,6 @@
 Package: RKazam
 Title: Boilerplate for implementing a DBI back end
-Version: 0.0.0.9004
+Version: 0.0.0.9005
 Authors@R: 
     c(
       person(given = "Kirill",
