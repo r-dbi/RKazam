@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9007 (2023-03-24)
+
+- Internal changes only.
+
+
 # RKazam 0.0.0.9006 (2023-02-17)
 
 - Internal changes only.
@@ -39,4 +44,3 @@
 - Travis tests pass.
 - Enable Travis CI.
 - Compatibility with current DBI: Use default method for `dbGetInfo(DBIResult)`.
-
