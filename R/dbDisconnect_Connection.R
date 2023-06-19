@@ -7,7 +7,7 @@ dbDisconnect_KazamConnection <- function(conn, ...) {
   }
 
   # TODO: Free resources
-  TRUE
+  invisible(TRUE)
 }
 #' @rdname DBI
 #' @export
