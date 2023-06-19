@@ -1,3 +1,5 @@
+#' @rdname DBI
+#' @usage NULL
 dbAppendTable_KazamConnection <- function(conn, name, value, ..., row.names = NULL) {
   # FIXME: Remove when parameterized binding is implemented
 
