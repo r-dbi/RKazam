@@ -1,4 +1,4 @@
-#' @include RKazam.R
+#' @include RKazam-package.R
 NULL
 
 #' DBI methods
@@ -12,7 +12,6 @@ NULL
 #' TBD.
 #'
 #' @export
-#' @import methods DBI
 #' @examples
 #' \dontrun{
 #' #' library(DBI)
@@ -24,7 +23,13 @@ Kazam <- function() {
 
 #' @rdname DBI
 #' @export
-setClass("KazamDriver", contains = "DBIDriver")
+setClass(
+  "KazamDriver",
+  contains = "DBIDriver",
+  slots = list(
+    # TODO: Add slots
+  )
+)
 
 #' @export
 DBI::dbCanConnect

@@ -11,7 +11,9 @@ KazamConnection <- function() {
 setClass(
   "KazamConnection",
   contains = "DBIConnection",
-  slots = list()
+  slots = list(
+    # TODO: Add slots
+  )
 )
 
 #' @export
@@ -28,6 +30,9 @@ DBI::dbGetQuery
 
 #' @export
 DBI::dbExecute
+
+#' @export
+DBI::dbReadTable
 
 #' @export
 DBI::dbCreateTable
