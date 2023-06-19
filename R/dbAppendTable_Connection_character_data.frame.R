@@ -17,5 +17,6 @@ dbAppendTable_KazamConnection <- function(conn, name, value, ..., row.names = NU
   )
   dbExecute(conn, query)
 }
+#' @rdname DBI
 #' @export
 setMethod("dbAppendTable", signature("KazamConnection"), dbAppendTable_KazamConnection)

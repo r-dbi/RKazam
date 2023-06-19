@@ -26,6 +26,7 @@
 \alias{KazamResult-class}
 \alias{KazamResultArrow-class}
 \alias{dbAppendTable_KazamConnection}
+\alias{dbAppendTable,KazamConnection-method}
 \alias{dbBegin_KazamConnection}
 \alias{dbBegin,KazamConnection-method}
 \alias{dbBind_KazamResult}
@@ -102,6 +103,8 @@
 \alias{show,KazamResult-method}
 \title{DBI methods}
 \usage{
+\S4method{dbAppendTable}{KazamConnection}(conn, name, value, ..., row.names = NULL)
+
 \S4method{dbBegin}{KazamConnection}(conn, ...)
 
 \S4method{dbBind}{KazamResult}(res, params, ...)
