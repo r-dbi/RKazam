@@ -2,7 +2,7 @@ DBItest::make_context(
   Kazam(),
   list(),
   tweaks = suppressWarnings(DBItest::tweaks(
-    dbitest_version = "1.7.2"
+    dbitest_version = "1.7.3"
   )),
   name = "RKazam",
   default_skip = c(
