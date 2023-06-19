@@ -11,8 +11,7 @@ KazamConnection <- function() {
 setClass(
   "KazamConnection",
   contains = "DBIConnection",
-  slots = list(
-  )
+  slots = list()
 )
 
 #' @export
