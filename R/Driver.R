@@ -26,7 +26,9 @@ Kazam <- function() {
 setClass(
   "KazamDriver",
   contains = "DBIDriver",
-  slots = list()
+  slots = list(
+    # TODO: Add slots
+  )
 )
 
 #' @export
