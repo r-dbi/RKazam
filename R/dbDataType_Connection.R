@@ -3,7 +3,7 @@
 #' @usage NULL
 dbDataType_KazamConnection <- function(dbObj, obj, ...) {
   tryCatch(
-    getMethod("dbDataType", "DBIObject", asNamespace("DBI"))(dbObj, obj, ...),
+    callNextMethod(...),
     error = function(e) testthat::skip("Not yet implemented: dbDataType(Connection)")
   )
 }

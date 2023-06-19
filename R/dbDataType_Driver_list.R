@@ -2,8 +2,8 @@
 #' @inheritParams DBI::dbDataType
 #' @usage NULL
 dbDataType_KazamDriver_list <- function(dbObj, obj, ...) {
-  # rstats-db/DBI#70
-  testthat::skip("Not yet implemented: dbDataType(Driver, list)")
+  # https://github.com/r-dbi/DBI/issues/70
+  callNextMethod(...)
 }
 #' @rdname DBI
 #' @export
