@@ -1,4 +1,6 @@
 #' @rdname DBI
+#' @param fail_if_missing If `FALSE`, `dbRemoveTable()` succeeds if the
+#'   table doesn't exist.
 #' @inheritParams DBI::dbRemoveTable
 #' @usage NULL
 dbRemoveTable_KazamConnection_character <- function(conn, name, ...,

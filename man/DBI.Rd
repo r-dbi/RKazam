@@ -205,6 +205,12 @@ For \code{dbWriteTableArrow()}, an object coercible to an Arrow RecordBatchReade
 
 \item{...}{Other parameters passed on to methods.}
 
+\item{row.names}{A logical specifying whether the \code{row.names} should be
+output to the output DBMS table; if \code{TRUE}, an extra field whose name
+will be whatever the R identifier \code{"row.names"} maps to the DBMS (see
+\code{\link[DBI:make.db.names]{DBI::make.db.names()}}). If \code{NA} will add rows names if
+they are characters, otherwise will ignore.}
+
 \item{res}{An object inheriting from \linkS4class{DBIResult}.}
 
 \item{params}{A list of bindings, named or unnamed.}
@@ -225,6 +231,12 @@ special values.}
 
 \item{x}{A character vector, \link[DBI]{SQL} or \link[DBI]{Id} object to quote as identifier.}
 
+\item{temporary}{a logical specifying whether the new table should be
+temporary. Its default is \code{FALSE}.}
+
+\item{fail_if_missing}{If \code{FALSE}, \code{dbRemoveTable()} succeeds if the
+table doesn't exist.}
+
 \item{statement}{a character string containing SQL.}
 
 \item{overwrite}{Allow overwriting the destination table. Cannot be
@@ -232,6 +244,10 @@ special values.}
 
 \item{append}{Allow appending to the destination table. Cannot be
 \code{TRUE} if \code{overwrite} is also \code{TRUE}.}
+
+\item{field.types}{character vector of named  SQL field types where
+the names are the names of new table's columns. If missing, types inferred
+with \code{\link[DBI:dbDataType]{DBI::dbDataType()}}).}
 
 \item{object}{Any R object}
 }
