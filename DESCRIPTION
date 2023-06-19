@@ -2,11 +2,11 @@ Package: RKazam
 Title: Boilerplate for implementing a DBI back end
 Version: 0.0.0.9007
 Authors@R: 
-    c(
-      person(given = "Kirill",
+    c(person(given = "Kirill",
              family = "M\u00fcller",
              role = c("aut", "cre"),
-             email = "krlmlr+r@mailbox.org"),
+             email = "kirill@cynkra.com",
+             comment = c(ORCID = "0000-0002-1416-3412")),
       person(given = "R Consortium",
              role = "fnd")
     )
@@ -18,7 +18,7 @@ URL: https://rkazam.r-dbi.org, https://github.com/r-dbi/RKazam
 Depends: 
     R (>= 3.0.0)
 Imports: 
-    DBI (>= 1.1.0),
+    DBI (>= 1.1.3.9004),
     methods,
     testthat
 Suggests: 
