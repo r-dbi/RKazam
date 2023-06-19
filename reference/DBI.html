@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">RKazam</a>
-        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="Unreleased version">0.0.0.9006</span>
+        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="Unreleased version">0.0.0.9007</span>
       </span>
     </div>
 
@@ -44,7 +44,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>DBI methods</h1>
-    <small class="dont-index">Source: <a href="https://github.com/r-dbi/RKazam/blob/HEAD/R/Driver.R" class="external-link"><code>R/Driver.R</code></a>, <a href="https://github.com/r-dbi/RKazam/blob/HEAD/R/Connection.R" class="external-link"><code>R/Connection.R</code></a>, <a href="https://github.com/r-dbi/RKazam/blob/HEAD/R/Result.R" class="external-link"><code>R/Result.R</code></a>, and 35 more</small>
+    <small class="dont-index">Source: <a href="https://github.com/r-dbi/RKazam/blob/HEAD/R/Driver.R" class="external-link"><code>R/Driver.R</code></a>, <a href="https://github.com/r-dbi/RKazam/blob/HEAD/R/Connection.R" class="external-link"><code>R/Connection.R</code></a>, <a href="https://github.com/r-dbi/RKazam/blob/HEAD/R/Result.R" class="external-link"><code>R/Result.R</code></a>, and 39 more</small>
     <div class="hidden name"><code>DBI.Rd</code></div>
     </div>
 
@@ -54,12 +54,18 @@
 
     <div id="ref-usage">
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="co"># S4 method for KazamConnection</span></span>
+<span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbAppendTable.html" class="external-link">dbAppendTable</a></span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">value</span>, <span class="va">...</span>, row.names <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection</span></span>
 <span><span class="fu">dbBegin</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for KazamResult</span></span>
 <span><span class="fu">dbBind</span><span class="op">(</span><span class="va">res</span>, <span class="va">params</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for KazamResult</span></span>
+<span><span class="fu">dbClearResult</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResultArrow</span></span>
 <span><span class="fu">dbClearResult</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for KazamResult</span></span>
@@ -85,6 +91,9 @@
 <span></span>
 <span><span class="co"># S4 method for KazamConnection,character</span></span>
 <span><span class="fu">dbExistsTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamResultArrow</span></span>
+<span><span class="fu">dbFetchArrow</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for KazamResult</span></span>
 <span><span class="fu">dbFetch</span><span class="op">(</span><span class="va">res</span>, n <span class="op">=</span> <span class="op">-</span><span class="fl">1</span>, <span class="va">...</span><span class="op">)</span></span>
@@ -132,22 +141,32 @@
 <span><span class="fu">dbQuoteString</span><span class="op">(</span><span class="va">conn</span>, <span class="va">x</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for KazamConnection,character</span></span>
-<span><span class="fu">dbReadTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">...</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># S4 method for KazamConnection,character</span></span>
-<span><span class="fu">dbRemoveTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="fu">dbRemoveTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">...</span>, temporary <span class="op">=</span> <span class="cn">FALSE</span>, fail_if_missing <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for KazamConnection</span></span>
 <span><span class="fu">dbRollback</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
-<span><span class="co"># S4 method for KazamConnection,character</span></span>
-<span><span class="fu">dbSendQuery</span><span class="op">(</span><span class="va">conn</span>, <span class="va">statement</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="co"># S4 method for KazamConnection</span></span>
+<span><span class="fu">dbSendQueryArrow</span><span class="op">(</span><span class="va">conn</span>, <span class="va">statement</span>, <span class="va">...</span>, params <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for KazamConnection,character</span></span>
-<span><span class="fu">dbSendStatement</span><span class="op">(</span><span class="va">conn</span>, <span class="va">statement</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="fu">dbSendQuery</span><span class="op">(</span><span class="va">conn</span>, <span class="va">statement</span>, <span class="va">...</span>, params <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S4 method for KazamConnection,character</span></span>
+<span><span class="fu">dbSendStatement</span><span class="op">(</span><span class="va">conn</span>, <span class="va">statement</span>, <span class="va">...</span>, params <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for KazamConnection,character,data.frame</span></span>
-<span><span class="fu">dbWriteTable</span><span class="op">(</span><span class="va">conn</span>, <span class="va">name</span>, <span class="va">value</span>, overwrite <span class="op">=</span> <span class="cn">FALSE</span>, append <span class="op">=</span> <span class="cn">FALSE</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="fu">dbWriteTable</span><span class="op">(</span></span>
+<span>  <span class="va">conn</span>,</span>
+<span>  <span class="va">name</span>,</span>
+<span>  <span class="va">value</span>,</span>
+<span>  overwrite <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  append <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  <span class="va">...</span>,</span>
+<span>  field.types <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  row.names <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  temporary <span class="op">=</span> <span class="cn">FALSE</span></span>
+<span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for KazamConnection</span></span>
 <span><span class="fu">show</span><span class="op">(</span><span class="va">object</span><span class="op">)</span></span>
@@ -166,8 +185,31 @@
 <code><a href="https://dbi.r-dbi.org/reference/dbConnect.html" class="external-link">dbConnect()</a></code>.</p></dd>
 
 
+<dt>name</dt>
+<dd><p>The table name, passed on to <code><a href="https://dbi.r-dbi.org/reference/dbQuoteIdentifier.html" class="external-link">dbQuoteIdentifier()</a></code>. Options are:</p><ul><li><p>a character string with the unquoted DBMS table name,
+e.g. <code>"table_name"</code>,</p></li>
+<li><p>a call to <code><a href="https://dbi.r-dbi.org/reference/Id.html" class="external-link">Id()</a></code> with components to the fully qualified table name,
+e.g. <code>Id(schema = "my_schema", table = "table_name")</code></p></li>
+<li><p>a call to <code><a href="https://dbi.r-dbi.org/reference/SQL.html" class="external-link">SQL()</a></code> with the quoted and fully qualified table name
+given verbatim, e.g. <code>SQL('"my_schema"."table_name"')</code></p></li>
+</ul></dd>
+
+
+<dt>value</dt>
+<dd><p>For <code>dbWriteTable()</code>, a <a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a> (or coercible to data.frame).
+For <code>dbWriteTableArrow()</code>, an object coercible to an Arrow RecordBatchReader.</p></dd>
+
+
 <dt>...</dt>
 <dd><p>Other parameters passed on to methods.</p></dd>
+
+
+<dt>row.names</dt>
+<dd><p>A logical specifying whether the <code>row.names</code> should be
+output to the output DBMS table; if <code>TRUE</code>, an extra field whose name
+will be whatever the R identifier <code>"row.names"</code> maps to the DBMS (see
+<code><a href="https://dbi.r-dbi.org/reference/make.db.names.html" class="external-link">DBI::make.db.names()</a></code>). If <code>NA</code> will add rows names if
+they are characters, otherwise will ignore.</p></dd>
 
 
 <dt>res</dt>
@@ -193,16 +235,6 @@ or DBIConnection</p></dd>
 <dd><p>An R object whose SQL type we want to determine.</p></dd>
 
 
-<dt>name</dt>
-<dd><p>The table name, passed on to <code><a href="https://dbi.r-dbi.org/reference/dbQuoteIdentifier.html" class="external-link">dbQuoteIdentifier()</a></code>. Options are:</p><ul><li><p>a character string with the unquoted DBMS table name,
-e.g. <code>"table_name"</code>,</p></li>
-<li><p>a call to <code><a href="https://dbi.r-dbi.org/reference/Id.html" class="external-link">Id()</a></code> with components to the fully qualified table name,
-e.g. <code>Id(schema = "my_schema", table = "table_name")</code></p></li>
-<li><p>a call to <code><a href="https://dbi.r-dbi.org/reference/SQL.html" class="external-link">SQL()</a></code> with the quoted and fully qualified table name
-given verbatim, e.g. <code>SQL('"my_schema"."table_name"')</code></p></li>
-</ul></dd>
-
-
 <dt>n</dt>
 <dd><p>maximum number of records to retrieve per fetch. Use <code>n = -1</code>
 or <code>n = Inf</code>
@@ -214,12 +246,18 @@ special values.</p></dd>
 <dd><p>A character vector, <a href="https://dbi.r-dbi.org/reference/SQL.html" class="external-link">SQL</a> or <a href="https://dbi.r-dbi.org/reference/Id.html" class="external-link">Id</a> object to quote as identifier.</p></dd>
 
 
+<dt>temporary</dt>
+<dd><p>a logical specifying whether the new table should be
+temporary. Its default is <code>FALSE</code>.</p></dd>
+
+
+<dt>fail_if_missing</dt>
+<dd><p>If <code>FALSE</code>, <code>dbRemoveTable()</code> succeeds if the
+table doesn't exist.</p></dd>
+
+
 <dt>statement</dt>
 <dd><p>a character string containing SQL.</p></dd>
-
-
-<dt>value</dt>
-<dd><p>a <a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a> (or coercible to data.frame).</p></dd>
 
 
 <dt>overwrite</dt>
@@ -230,6 +268,12 @@ special values.</p></dd>
 <dt>append</dt>
 <dd><p>Allow appending to the destination table. Cannot be
 <code>TRUE</code> if <code>overwrite</code> is also <code>TRUE</code>.</p></dd>
+
+
+<dt>field.types</dt>
+<dd><p>character vector of named  SQL field types where
+the names are the names of new table's columns. If missing, types inferred
+with <code><a href="https://dbi.r-dbi.org/reference/dbDataType.html" class="external-link">DBI::dbDataType()</a></code>).</p></dd>
 
 
 <dt>object</dt>
