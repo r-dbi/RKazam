@@ -1,4 +1,4 @@
-#' @include RKazam.R
+#' @include RKazam-package.R
 NULL
 
 #' DBI methods
@@ -12,7 +12,6 @@ NULL
 #' TBD.
 #'
 #' @export
-#' @import methods DBI
 #' @examples
 #' \dontrun{
 #' #' library(DBI)
