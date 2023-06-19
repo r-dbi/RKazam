@@ -1,9 +1,14 @@
 #' @rdname DBI
 #' @inheritParams DBI::dbSendQuery
 #' @usage NULL
-dbSendQuery_KazamConnection_character <- function(conn, statement, ...) {
+dbSendQuery_KazamConnection_character <- function(conn, statement, ..., params = NULL) {
+  if (!is.null(params)) {
+    # TODO: Implement parameter binding
+    testthat::skip("Not yet implemented: dbSendQuery(params = )")
+  }
+
   # TODO: Implement, remove skip() call
-  testthat::skip("Not sending query")
+  testthat::skip("Not yet implemented: dbSendQuery()")
   KazamResult(connection = conn, statement = statement)
 }
 #' @rdname DBI
