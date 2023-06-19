@@ -3,7 +3,10 @@ NULL
 
 KazamResult <- function(connection, statement) {
   # TODO: Initialize result
-  new("KazamResult", connection = connection, statement = statement)
+  new("KazamResult",
+    connection = connection,
+    statement = statement
+  )
 }
 
 #' @rdname DBI

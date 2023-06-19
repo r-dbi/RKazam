@@ -24,7 +24,12 @@ Kazam <- function() {
 
 #' @rdname DBI
 #' @export
-setClass("KazamDriver", contains = "DBIDriver")
+setClass(
+  "KazamDriver",
+  contains = "DBIDriver",
+  slots = list(
+  )
+)
 
 #' @export
 DBI::dbCanConnect
