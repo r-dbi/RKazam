@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9008 (2023-10-09)
+
+## Features
+
+- Bring back improvements from adbc package (#19).
+
+
 # RKazam 0.0.0.9007 (2023-03-24)
 
 - Internal changes only.
