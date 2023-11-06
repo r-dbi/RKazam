@@ -1,5 +1,16 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9009 (2023-11-06)
+
+## Chore
+
+- Add Aviator configuration.
+
+## Testing
+
+- Only run if DBItest is installed (#20).
+
+
 # RKazam 0.0.0.9008 (2023-10-09)
 
 ## Features
