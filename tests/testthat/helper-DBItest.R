@@ -1,4 +1,4 @@
-DBItest::make_context(
+if (requireNamespace("DBItest", quietly = TRUE)) DBItest::make_context(
   Kazam(),
   list(),
   tweaks = suppressWarnings(DBItest::tweaks(
