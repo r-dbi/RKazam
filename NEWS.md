@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9010 (2023-11-10)
+
+## Testing
+
+- Skip helper if DBItest is not installed (#21).
+
+
 # RKazam 0.0.0.9009 (2023-11-06)
 
 ## Chore
