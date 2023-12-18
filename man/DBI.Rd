@@ -216,7 +216,10 @@ they are characters, otherwise will ignore.}
 
 \item{res}{An object inheriting from \linkS4class{DBIResult}.}
 
-\item{params}{A list of bindings, named or unnamed.}
+\item{params}{For \code{dbBind()}, a list of values, named or unnamed,
+or a data frame, with one element/column per query parameter.
+For \code{dbBindArrow()}, values as a nanoarrow stream,
+with one column per query parameter.}
 
 \item{drv}{an object that inherits from \linkS4class{DBIDriver},
 or an existing \linkS4class{DBIConnection}
