@@ -1,8 +1,7 @@
-url: https://rkazamg s.r-dbi.org
+url: ~
 
 template:
-  params:
-    bootswatch: flatly # https://bootswatch.com/flatly/
+  package: dbitemplate
 
 home:
   links:
