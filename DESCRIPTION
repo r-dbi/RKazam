@@ -18,12 +18,12 @@ URL: https://rkazam.r-dbi.org, https://github.com/r-dbi/RKazam
 Depends: 
     R (>= 3.0.0)
 Imports: 
-    DBI (>= 1.1.3.9004),
+    DBI (>= 1.2.0),
     methods,
     testthat
 Suggests: 
     covr,
-    DBItest
+    DBItest (>= 1.8.0)
 Remotes: 
     r-dbi/DBI
 Encoding: UTF-8
