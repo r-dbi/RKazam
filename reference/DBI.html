@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">RKazam</a>
-        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="Unreleased version">0.0.0.9009</span>
+        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="Unreleased version">0.0.0.9011</span>
       </span>
     </div>
 
@@ -217,7 +217,10 @@ they are characters, otherwise will ignore.</p></dd>
 
 
 <dt>params</dt>
-<dd><p>A list of bindings, named or unnamed.</p></dd>
+<dd><p>For <code>dbBind()</code>, a list of values, named or unnamed,
+or a data frame, with one element/column per query parameter.
+For <code>dbBindArrow()</code>, values as a nanoarrow stream,
+with one column per query parameter.</p></dd>
 
 
 <dt>drv</dt>
