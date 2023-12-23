@@ -1,5 +1,18 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9012 (2023-12-23)
+
+## Chore
+
+- Bump dependencies.
+
+- Add Aviator configuration.
+
+## Documentation
+
+- Use dbitemplate (@maelle, #22).
+
+
 # RKazam 0.0.0.9011 (2023-12-18)
 
 - Internal changes only.
