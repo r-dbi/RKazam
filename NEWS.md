@@ -1,5 +1,52 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9016 (2024-08-31)
+
+## Chore
+
+  - Auto-update from GitHub Actions.
+    
+    Run: https://github.com/r-dbi/RKazam/actions/runs/10425482924
+
+  - Auto-update from GitHub Actions.
+    
+    Run: https://github.com/r-dbi/RKazam/actions/runs/10200160548
+
+  - Auto-update from GitHub Actions.
+    
+    Run: https://github.com/r-dbi/RKazam/actions/runs/9728443838
+
+  - Auto-update from GitHub Actions.
+    
+    Run: https://github.com/r-dbi/RKazam/actions/runs/9691616931
+
+## Continuous integration
+
+  - Install local package for pkgdown builds.
+
+  - Improve support for protected branches with fledge.
+
+  - Improve support for protected branches, without fledge.
+
+  - Sync with latest developments.
+
+  - Use v2 instead of master.
+
+  - Inline action.
+
+  - Use dev roxygen2 and decor.
+
+  - Fix on Windows, tweak lock workflow.
+
+  - Avoid checking bashisms on Windows.
+
+  - Better commit message.
+
+  - Bump versions, better default, consume custom matrix.
+
+  - Recent updates.
+
+
 # RKazam 0.0.0.9015 (2024-01-24)
 
 - Internal changes only.
