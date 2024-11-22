@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9021 (2024-11-22)
+
+## Continuous integration
+
+  - Correctly detect branch protection (#28).
+
+
 # RKazam 0.0.0.9020 (2024-11-18)
 
 ## Continuous integration
