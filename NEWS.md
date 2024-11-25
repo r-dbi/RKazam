@@ -1,5 +1,14 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9022 (2024-11-25)
+
+## Continuous integration
+
+- Need to install R on Ubuntu 24.04 (#31).
+
+- Use Ubuntu 24.04 and styler PR (#29).
+
+
 # RKazam 0.0.0.9021 (2024-11-22)
 
 ## Continuous integration
