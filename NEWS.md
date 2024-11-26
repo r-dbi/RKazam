@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9023 (2024-11-26)
+
+## Continuous integration
+
+- Use styler from main branch (#32).
+
+
 # RKazam 0.0.0.9022 (2024-11-25)
 
 ## Continuous integration
