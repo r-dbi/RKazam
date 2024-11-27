@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9024 (2024-11-27)
+
+## Continuous integration
+
+- Explicit permissions (#33).
+
+
 # RKazam 0.0.0.9023 (2024-11-26)
 
 ## Continuous integration
