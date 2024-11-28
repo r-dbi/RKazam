@@ -190,8 +190,8 @@
 \S4method{show}{KazamResult}(object)
 }
 \arguments{
-\item{conn}{A \link[DBI:DBIConnection-class]{DBI::DBIConnection} object,
-as returned by \code{\link[DBI:dbConnect]{dbConnect()}}.}
+\item{conn}{A \linkS4class{DBIConnection} object, as returned by
+\code{\link[DBI:dbConnect]{dbConnect()}}.}
 
 \item{name}{The table name, passed on to \code{\link[DBI:dbQuoteIdentifier]{dbQuoteIdentifier()}}. Options are:
 \itemize{
@@ -213,19 +213,19 @@ will be whatever the R identifier \code{"row.names"} maps to the DBMS (see
 \code{\link[DBI:make.db.names]{DBI::make.db.names()}}). If \code{NA} will add rows names if
 they are characters, otherwise will ignore.}
 
-\item{res}{An object inheriting from \link[DBI:DBIResult-class]{DBI::DBIResult}.}
+\item{res}{An object inheriting from \linkS4class{DBIResult}.}
 
 \item{params}{For \code{dbBind()}, a list of values, named or unnamed,
 or a data frame, with one element/column per query parameter.
 For \code{dbBindArrow()}, values as a nanoarrow stream,
 with one column per query parameter.}
 
-\item{drv}{An object that inherits from \link[DBI:DBIDriver-class]{DBI::DBIDriver},
-or an existing \link[DBI:DBIConnection-class]{DBI::DBIConnection}
+\item{drv}{an object that inherits from \linkS4class{DBIDriver},
+or an existing \linkS4class{DBIConnection}
 object (in order to clone an existing connection).}
 
-\item{dbObj}{A object inheriting from \link[DBI:DBIDriver-class]{DBI::DBIDriver}
-or \link[DBI:DBIConnection-class]{DBI::DBIConnection}}
+\item{dbObj}{A object inheriting from \linkS4class{DBIDriver}
+or \linkS4class{DBIConnection}}
 
 \item{obj}{An R object whose SQL type we want to determine.}
 
