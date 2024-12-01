@@ -1,5 +1,16 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9028 (2024-12-01)
+
+## Continuous integration
+
+- Remove Aviator.
+
+## Documentation
+
+- Convert `\linkS4class{}` to `\link[]{}` (#35).
+
+
 # RKazam 0.0.0.9027 (2024-11-30)
 
 ## Continuous integration
