@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9029 (2024-12-02)
+
+## Documentation
+
+- Use qualified `\link{}` in favor of `\linkS4class{}`.
+
+
 # RKazam 0.0.0.9028 (2024-12-01)
 
 ## Continuous integration
