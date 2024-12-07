@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9030 (2024-12-07)
+
+## Continuous integration
+
+- Use larger retry count for lock-threads workflow (#40).
+
+
 # RKazam 0.0.0.9029 (2024-12-02)
 
 ## Documentation
