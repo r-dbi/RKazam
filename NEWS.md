@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9031 (2024-12-08)
+
+## Continuous integration
+
+- Fetch tags for fledge workflow to avoid unnecessary NEWS entries (#42).
+
+
 # RKazam 0.0.0.9030 (2024-12-07)
 
 ## Continuous integration
