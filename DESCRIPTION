@@ -23,7 +23,7 @@ Imports:
     testthat
 Suggests: 
     covr,
-    DBItest (>= 1.8.0)
+    DBItest (>= 1.8.2)
 Remotes: 
     r-dbi/DBI
 Config/Needs/website: r-dbi/dbitemplate
