@@ -16,7 +16,7 @@ if (requireNamespace("DBItest", quietly = TRUE)) DBItest::make_context(
     # TODO: Understand why test fails in R < 3.6
     if (getRversion() < "3.6") "connect_format",
     # Fails with older DBItest
-    if (packageVersion("DBItest") < "1.7.2") "reexport",
+    if (utils::packageVersion("DBItest") < "1.7.2") "reexport",
     NULL
   )
 )
