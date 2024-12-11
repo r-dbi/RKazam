@@ -1,5 +1,18 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9032 (2024-12-11)
+
+## Chore
+
+- Qualify `packageVersion()`.
+
+- Bump versions.
+
+## Documentation
+
+- Document.
+
+
 # RKazam 0.0.0.9031 (2024-12-08)
 
 ## Continuous integration
