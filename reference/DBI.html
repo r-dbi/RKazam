@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">RKazam</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9030</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9031</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@
 <span><span class="fu">dbBegin</span><span class="op">(</span><span class="va">conn</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for class 'KazamResult'</span></span>
-<span><span class="fu">dbBind</span><span class="op">(</span><span class="va">res</span>, <span class="va">params</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbBind.html" class="external-link">dbBind</a></span><span class="op">(</span><span class="va">res</span>, <span class="va">params</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for class 'KazamResult'</span></span>
 <span><span class="fu">dbClearResult</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span></span>
@@ -82,7 +82,7 @@
 <span><span class="fu">dbFetchArrow</span><span class="op">(</span><span class="va">res</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for class 'KazamResult'</span></span>
-<span><span class="fu">dbFetch</span><span class="op">(</span><span class="va">res</span>, n <span class="op">=</span> <span class="op">-</span><span class="fl">1</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbFetch.html" class="external-link">dbFetch</a></span><span class="op">(</span><span class="va">res</span>, n <span class="op">=</span> <span class="op">-</span><span class="fl">1</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for class 'KazamConnection'</span></span>
 <span><span class="fu">dbGetInfo</span><span class="op">(</span><span class="va">dbObj</span>, <span class="va">...</span><span class="op">)</span></span>
@@ -142,7 +142,7 @@
 <span><span class="fu">dbSendStatement</span><span class="op">(</span><span class="va">conn</span>, <span class="va">statement</span>, <span class="va">...</span>, params <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S4 method for class 'KazamConnection,character,data.frame'</span></span>
-<span><span class="fu">dbWriteTable</span><span class="op">(</span></span>
+<span><span class="fu"><a href="https://dbi.r-dbi.org/reference/dbWriteTable.html" class="external-link">dbWriteTable</a></span><span class="op">(</span></span>
 <span>  <span class="va">conn</span>,</span>
 <span>  <span class="va">name</span>,</span>
 <span>  <span class="va">value</span>,</span>
@@ -169,8 +169,8 @@
 
 
 <dl><dt id="arg-conn">conn<a class="anchor" aria-label="anchor" href="#arg-conn"></a></dt>
-<dd><p>A DBIConnection object, as returned by
-<code><a href="https://dbi.r-dbi.org/reference/dbConnect.html" class="external-link">dbConnect()</a></code>.</p></dd>
+<dd><p>A <a href="https://dbi.r-dbi.org/reference/DBIConnection-class.html" class="external-link">DBI::DBIConnection</a> object,
+as returned by <code><a href="https://dbi.r-dbi.org/reference/dbConnect.html" class="external-link">dbConnect()</a></code>.</p></dd>
 
 
 <dt id="arg-name">name<a class="anchor" aria-label="anchor" href="#arg-name"></a></dt>
@@ -200,25 +200,25 @@ they are characters, otherwise will ignore.</p></dd>
 
 
 <dt id="arg-res">res<a class="anchor" aria-label="anchor" href="#arg-res"></a></dt>
-<dd><p>An object inheriting from DBIResult.</p></dd>
+<dd><p>An object inheriting from <a href="https://dbi.r-dbi.org/reference/DBIResult-class.html" class="external-link">DBI::DBIResult</a>.</p></dd>
 
 
 <dt id="arg-params">params<a class="anchor" aria-label="anchor" href="#arg-params"></a></dt>
-<dd><p>For <code>dbBind()</code>, a list of values, named or unnamed,
+<dd><p>For <code><a href="https://dbi.r-dbi.org/reference/dbBind.html" class="external-link">dbBind()</a></code>, a list of values, named or unnamed,
 or a data frame, with one element/column per query parameter.
-For <code>dbBindArrow()</code>, values as a nanoarrow stream,
+For <code><a href="https://dbi.r-dbi.org/reference/dbBind.html" class="external-link">dbBindArrow()</a></code>, values as a nanoarrow stream,
 with one column per query parameter.</p></dd>
 
 
 <dt id="arg-drv">drv<a class="anchor" aria-label="anchor" href="#arg-drv"></a></dt>
-<dd><p>an object that inherits from DBIDriver,
-or an existing DBIConnection
+<dd><p>An object that inherits from <a href="https://dbi.r-dbi.org/reference/DBIDriver-class.html" class="external-link">DBI::DBIDriver</a>,
+or an existing <a href="https://dbi.r-dbi.org/reference/DBIConnection-class.html" class="external-link">DBI::DBIConnection</a>
 object (in order to clone an existing connection).</p></dd>
 
 
 <dt id="arg-dbobj">dbObj<a class="anchor" aria-label="anchor" href="#arg-dbobj"></a></dt>
-<dd><p>A object inheriting from DBIDriver
-or DBIConnection</p></dd>
+<dd><p>A object inheriting from <a href="https://dbi.r-dbi.org/reference/DBIDriver-class.html" class="external-link">DBI::DBIDriver</a>
+or <a href="https://dbi.r-dbi.org/reference/DBIConnection-class.html" class="external-link">DBI::DBIConnection</a></p></dd>
 
 
 <dt id="arg-obj">obj<a class="anchor" aria-label="anchor" href="#arg-obj"></a></dt>
