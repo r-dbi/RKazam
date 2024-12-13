@@ -9,10 +9,20 @@
 \alias{dbQuoteLiteral}
 \alias{dbUnquoteIdentifier}
 \alias{dbGetQuery}
+\alias{dbGetQueryArrow}
+\alias{dbFetch}
+\alias{dbFetchArrowChunk}
 \alias{dbExecute}
 \alias{dbReadTable}
+\alias{dbReadTableArrow}
+\alias{dbWriteTable}
+\alias{dbWriteTableArrow}
 \alias{dbCreateTable}
+\alias{dbCreateTableArrow}
 \alias{dbAppendTable}
+\alias{dbAppendTableArrow}
+\alias{dbBind}
+\alias{dbBindArrow}
 \alias{dbListObjects}
 \alias{dbWithTransaction}
 \title{Objects exported from other packages}
@@ -22,6 +32,6 @@ These objects are imported from other packages. Follow the links
 below to see their documentation.
 
 \describe{
-  \item{DBI}{\code{\link[DBI]{dbAppendTable}}, \code{\link[DBI]{dbCanConnect}}, \code{\link[DBI]{dbCreateTable}}, \code{\link[DBI]{dbExecute}}, \code{\link[DBI]{dbGetQuery}}, \code{\link[DBI]{dbIsReadOnly}}, \code{\link[DBI]{dbListObjects}}, \code{\link[DBI]{dbQuoteLiteral}}, \code{\link[DBI]{dbReadTable}}, \code{\link[DBI]{dbUnquoteIdentifier}}, \code{\link[DBI]{dbWithTransaction}}, \code{\link[DBI]{Id}}}
+  \item{DBI}{\code{\link[DBI]{Id}}, \code{\link[DBI]{dbAppendTable}}, \code{\link[DBI]{dbAppendTableArrow}}, \code{\link[DBI]{dbBind}}, \code{\link[DBI:dbBind]{dbBindArrow}}, \code{\link[DBI]{dbCanConnect}}, \code{\link[DBI]{dbCreateTable}}, \code{\link[DBI]{dbCreateTableArrow}}, \code{\link[DBI]{dbExecute}}, \code{\link[DBI]{dbFetch}}, \code{\link[DBI]{dbFetchArrowChunk}}, \code{\link[DBI]{dbGetQuery}}, \code{\link[DBI]{dbGetQueryArrow}}, \code{\link[DBI]{dbIsReadOnly}}, \code{\link[DBI]{dbListObjects}}, \code{\link[DBI]{dbQuoteLiteral}}, \code{\link[DBI]{dbReadTable}}, \code{\link[DBI]{dbReadTableArrow}}, \code{\link[DBI]{dbUnquoteIdentifier}}, \code{\link[DBI]{dbWithTransaction}}, \code{\link[DBI]{dbWriteTable}}, \code{\link[DBI]{dbWriteTableArrow}}}
 }}
 
