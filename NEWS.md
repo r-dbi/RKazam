@@ -1,5 +1,24 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9033 (2025-04-30)
+
+## Continuous integration
+
+- Permissions, better tests for missing suggests, lints (#61).
+
+- Only fail covr builds if token is given (#58).
+
+- Always use `_R_CHECK_FORCE_SUGGESTS_=false` (#57).
+
+- Correct installation of xml2 (#54).
+
+- Explain (#52).
+
+- Add xml2 for covr, print testthat results (#51).
+
+- Avoid failure in fledge workflow if no changes (#44).
+
+
 # RKazam 0.0.0.9032 (2024-12-14)
 
 ## Bug fixes
