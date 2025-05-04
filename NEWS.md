@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9034 (2025-05-04)
+
+## Continuous integration
+
+- Enhance permissions for workflow (#63).
+
+
 # RKazam 0.0.0.9033 (2025-04-30)
 
 ## Continuous integration
