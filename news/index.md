@@ -1,5 +1,28 @@
 # Changelog
 
+## RKazam 0.0.0.9035 (2025-11-11)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#67](https://github.com/r-dbi/RKazam/issues/67)).
+
+### Continuous integration
+
+- Use workflows for fledge
+  ([\#70](https://github.com/r-dbi/RKazam/issues/70)).
+
+- Sync ([\#69](https://github.com/r-dbi/RKazam/issues/69)).
+
+- Use reviewdog for external PRs
+  ([\#68](https://github.com/r-dbi/RKazam/issues/68)).
+
+- Cleanup and fix macOS
+  ([\#66](https://github.com/r-dbi/RKazam/issues/66)).
+
+- Format with air, check detritus, better handling of `extra-packages`
+  ([\#65](https://github.com/r-dbi/RKazam/issues/65)).
+
 ## RKazam 0.0.0.9034 (2025-05-04)
 
 ### Continuous integration
