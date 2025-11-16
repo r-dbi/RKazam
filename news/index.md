@@ -1,5 +1,12 @@
 # Changelog
 
+## RKazam 0.0.0.9036 (2025-11-12)
+
+### Continuous integration
+
+- Fix reviewdog and add commenting workflow
+  ([\#72](https://github.com/r-dbi/RKazam/issues/72)).
+
 ## RKazam 0.0.0.9035 (2025-11-11)
 
 ### Chore
