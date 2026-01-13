@@ -12,13 +12,13 @@
 Source:
 [`DESCRIPTION`](https://github.com/r-dbi/RKazam/blob/main/DESCRIPTION)
 
-Müller K (2025). *RKazam: Boilerplate for implementing a DBI back end*.
-R package version 0.0.0.9036, <https://rkazam.r-dbi.org>.
+Müller K (2026). *RKazam: Boilerplate for implementing a DBI back end*.
+R package version 0.0.0.9037, <https://rkazam.r-dbi.org>.
 
     @Manual{,
       title = {RKazam: Boilerplate for implementing a DBI back end},
       author = {Kirill Müller},
-      year = {2025},
-      note = {R package version 0.0.0.9036},
+      year = {2026},
+      note = {R package version 0.0.0.9037},
       url = {https://rkazam.r-dbi.org},
     }

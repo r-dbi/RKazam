@@ -1,5 +1,12 @@
 # Changelog
 
+## RKazam 0.0.0.9037 (2025-11-17)
+
+### Continuous integration
+
+- Install binaries from r-universe for dev workflow
+  ([\#74](https://github.com/r-dbi/RKazam/issues/74)).
+
 ## RKazam 0.0.0.9036 (2025-11-12)
 
 ### Continuous integration
