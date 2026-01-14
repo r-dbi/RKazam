@@ -1,5 +1,16 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9038 (2026-01-14)
+
+## Continuous integration
+
+- Fix comment (#78).
+
+- Tweaks (#77).
+
+- Test all R versions on branches that start with cran- (#76).
+
+
 # RKazam 0.0.0.9037 (2025-11-17)
 
 ## Continuous integration
