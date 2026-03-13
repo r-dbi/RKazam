@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9040 (2026-03-13)
+
+## Chore
+
+- Auto-update from GitHub Actions (#82).
+
+
 # RKazam 0.0.0.9039 (2026-03-08)
 
 ## Chore
