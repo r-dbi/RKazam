@@ -1,5 +1,44 @@
 # Changelog
 
+## RKazam 0.0.0.9042 (2026-05-04)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#89](https://github.com/r-dbi/RKazam/issues/89)).
+
+## RKazam 0.0.0.9041 (2026-03-19)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#87](https://github.com/r-dbi/RKazam/issues/87)).
+
+## RKazam 0.0.0.9040 (2026-03-13)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#82](https://github.com/r-dbi/RKazam/issues/82)).
+
+## RKazam 0.0.0.9039 (2026-03-08)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#80](https://github.com/r-dbi/RKazam/issues/80)).
+
+## RKazam 0.0.0.9038 (2026-01-14)
+
+### Continuous integration
+
+- Fix comment ([\#78](https://github.com/r-dbi/RKazam/issues/78)).
+
+- Tweaks ([\#77](https://github.com/r-dbi/RKazam/issues/77)).
+
+- Test all R versions on branches that start with cran-
+  ([\#76](https://github.com/r-dbi/RKazam/issues/76)).
+
 ## RKazam 0.0.0.9037 (2025-11-17)
 
 ### Continuous integration
