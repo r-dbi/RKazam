@@ -1,5 +1,12 @@
 # Changelog
 
+## RKazam 0.0.0.9045 (2026-05-16)
+
+### fledge
+
+- Bump version to 0.0.0.9040
+  ([\#86](https://github.com/r-dbi/RKazam/issues/86)).
+
 ## RKazam 0.0.0.9044 (2026-05-13)
 
 ### Chore
