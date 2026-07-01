@@ -58,25 +58,27 @@ exportMethods(dbWriteTable)
 exportMethods(show)
 import(DBI)
 import(methods)
-importFrom(DBI,Id)
-importFrom(DBI,dbAppendTable)
-importFrom(DBI,dbAppendTableArrow)
-importFrom(DBI,dbBind)
-importFrom(DBI,dbBindArrow)
-importFrom(DBI,dbCanConnect)
-importFrom(DBI,dbCreateTable)
-importFrom(DBI,dbCreateTableArrow)
-importFrom(DBI,dbExecute)
-importFrom(DBI,dbFetch)
-importFrom(DBI,dbFetchArrowChunk)
-importFrom(DBI,dbGetQuery)
-importFrom(DBI,dbGetQueryArrow)
-importFrom(DBI,dbIsReadOnly)
-importFrom(DBI,dbListObjects)
-importFrom(DBI,dbQuoteLiteral)
-importFrom(DBI,dbReadTable)
-importFrom(DBI,dbReadTableArrow)
-importFrom(DBI,dbUnquoteIdentifier)
-importFrom(DBI,dbWithTransaction)
-importFrom(DBI,dbWriteTable)
-importFrom(DBI,dbWriteTableArrow)
+importFrom(DBI,
+  Id,
+  dbAppendTable,
+  dbAppendTableArrow,
+  dbBind,
+  dbBindArrow,
+  dbCanConnect,
+  dbCreateTable,
+  dbCreateTableArrow,
+  dbExecute,
+  dbFetch,
+  dbFetchArrowChunk,
+  dbGetQuery,
+  dbGetQueryArrow,
+  dbIsReadOnly,
+  dbListObjects,
+  dbQuoteLiteral,
+  dbReadTable,
+  dbReadTableArrow,
+  dbUnquoteIdentifier,
+  dbWithTransaction,
+  dbWriteTable,
+  dbWriteTableArrow
+)
