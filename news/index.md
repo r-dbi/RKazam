@@ -1,5 +1,20 @@
 # Changelog
 
+## RKazam 0.0.0.9047 (2026-07-02)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#99](https://github.com/r-dbi/RKazam/issues/99)).
+
+## RKazam 0.0.0.9046 (2026-05-24)
+
+### Continuous integration
+
+- Update ccache-action reference.
+
+- Bump action version.
+
 ## RKazam 0.0.0.9045 (2026-05-16)
 
 ### fledge
