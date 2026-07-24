@@ -1,5 +1,18 @@
 # Changelog
 
+## RKazam 0.0.0.9049 (2026-07-24)
+
+### Bug fixes
+
+#### ci
+
+- Emit empty package matrix when there are no (rev)deps.
+
+### fledge
+
+- Bump version to 0.0.0.9044
+  ([\#93](https://github.com/r-dbi/RKazam/issues/93)).
+
 ## RKazam 0.0.0.9048 (2026-07-22)
 
 ### Continuous integration
