@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9050 (2026-07-25)
+
+## Continuous integration
+
+- Lock down `format-suggest` egress (audit → block).
+
+
 # RKazam 0.0.0.9049 (2026-07-24)
 
 ## Bug fixes
