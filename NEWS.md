@@ -1,5 +1,16 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9051 (2026-07-28)
+
+## fledge
+
+- Bump version to 0.0.0.9045 (#97).
+
+- Bump version to 0.0.0.9044 (#95).
+
+- Bump version to 0.0.0.9044 (#96).
+
+
 # RKazam 0.0.0.9050 (2026-07-25)
 
 ## Continuous integration
