@@ -1,5 +1,27 @@
 # Changelog
 
+## RKazam 0.0.0.9052 (2026-08-05)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#99](https://github.com/r-dbi/RKazam/issues/99)).
+
+- Auto-update from GitHub Actions
+  ([\#106](https://github.com/r-dbi/RKazam/issues/106)).
+
+### Continuous integration
+
+- Remove unused pr-commands workflow.
+
+### fledge
+
+- Bump version to 0.0.0.9049
+  ([\#103](https://github.com/r-dbi/RKazam/issues/103)).
+
+- Bump version to 0.0.0.9048
+  ([\#102](https://github.com/r-dbi/RKazam/issues/102)).
+
 ## RKazam 0.0.0.9051 (2026-07-28)
 
 ### fledge
