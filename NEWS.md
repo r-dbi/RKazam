@@ -1,5 +1,24 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9052 (2026-08-05)
+
+## Chore
+
+- Auto-update from GitHub Actions (#99).
+
+- Auto-update from GitHub Actions (#106).
+
+## Continuous integration
+
+- Remove unused pr-commands workflow.
+
+## fledge
+
+- Bump version to 0.0.0.9049 (#103).
+
+- Bump version to 0.0.0.9048 (#102).
+
+
 # RKazam 0.0.0.9051 (2026-07-28)
 
 ## fledge
