@@ -1,5 +1,21 @@
 # Changelog
 
+## RKazam 0.0.0.9053 (2026-08-06)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#106](https://github.com/r-dbi/RKazam/issues/106)).
+
+### Continuous integration
+
+- Add sharded `revdep2` workflow.
+
+### fledge
+
+- Bump version to 0.0.0.9051
+  ([\#105](https://github.com/r-dbi/RKazam/issues/105)).
+
 ## RKazam 0.0.0.9052 (2026-08-05)
 
 ### Chore
