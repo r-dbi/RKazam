@@ -1,5 +1,13 @@
 # Changelog
 
+## RKazam 0.0.0.9055 (2026-09-05)
+
+### Bug fixes
+
+#### ci
+
+- Backport kit fixes from `rigraph`, `duckdb-r` and `dm`.
+
 ## RKazam 0.0.0.9054 (2026-08-08)
 
 ### Continuous integration
