@@ -190,17 +190,16 @@
 \S4method{show}{KazamResult}(object)
 }
 \arguments{
-\item{conn}{A \link[DBI:DBIConnection-class]{DBI::DBIConnection} object,
-as returned by \code{\link[DBI:dbConnect]{dbConnect()}}.}
+\item{conn}{A \link[DBI:DBIConnection-class]{DBI::DBIConnection} object, as returned by \code{\link[DBI:dbConnect]{dbConnect()}}.}
 
-\item{name}{The table name, passed on to \code{\link[DBI:dbQuoteIdentifier]{dbQuoteIdentifier()}}. Options are:
+\item{name}{The table name, passed on to \code{\link[DBI:dbQuoteIdentifier]{dbQuoteIdentifier()}}.
+Options are:
 \itemize{
-\item a character string with the unquoted DBMS table name,
-e.g. \code{"table_name"},
+\item a character string with the unquoted DBMS table name, e.g. \code{"table_name"},
 \item a call to \code{\link[DBI:Id]{Id()}} with components to the fully qualified table name,
 e.g. \code{Id(schema = "my_schema", table = "table_name")}
-\item a call to \code{\link[DBI:SQL]{SQL()}} with the quoted and fully qualified table name
-given verbatim, e.g. \code{SQL('"my_schema"."table_name"')}
+\item a call to \code{\link[DBI:SQL]{SQL()}} with the quoted and fully qualified table name given verbatim,
+e.g. \code{SQL('"my_schema"."table_name"')}
 }}
 
 \item{value}{A \link{data.frame} (or coercible to data.frame).}
@@ -215,24 +214,21 @@ they are characters, otherwise will ignore.}
 
 \item{res}{An object inheriting from \link[DBI:DBIResult-class]{DBI::DBIResult}.}
 
-\item{params}{For \code{dbBind()}, a list of values, named or unnamed,
-or a data frame, with one element/column per query parameter.
-For \code{dbBindArrow()}, values as a nanoarrow stream,
-with one column per query parameter.}
+\item{params}{For \code{dbBind()}, a list of values, named or unnamed, or a data frame,
+with one element/column per query parameter.
+For \code{dbBindArrow()}, values as a nanoarrow stream, with one column per query parameter.}
 
 \item{drv}{An object that inherits from \link[DBI:DBIDriver-class]{DBI::DBIDriver},
-or an existing \link[DBI:DBIConnection-class]{DBI::DBIConnection}
-object (in order to clone an existing connection).}
+or an existing \link[DBI:DBIConnection-class]{DBI::DBIConnection} object (in order to clone an existing connection).}
 
 \item{dbObj}{A object inheriting from \link[DBI:DBIDriver-class]{DBI::DBIDriver}
 or \link[DBI:DBIConnection-class]{DBI::DBIConnection}}
 
 \item{obj}{An R object whose SQL type we want to determine.}
 
-\item{n}{maximum number of records to retrieve per fetch. Use \code{n = -1}
-or \code{n = Inf}
-to retrieve all pending records.  Some implementations may recognize other
-special values.}
+\item{n}{maximum number of records to retrieve per fetch.
+Use \code{n = -1} or \code{n = Inf} to retrieve all pending records.
+Some implementations may recognize other special values.}
 
 \item{x}{A character vector, \link[DBI]{SQL} or \link[DBI]{Id} object to quote as identifier.}
 
