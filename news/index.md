@@ -1,5 +1,19 @@
 # Changelog
 
+## RKazam 0.0.0.9056 (2026-09-13)
+
+### Features
+
+#### ci
+
+- Align the `revdep2`, `revdep4` and `revdepx` subsystems with
+  `rigraph`.
+
+### Uncategorized
+
+- Ci: Fail the roxygenize step on roxygen2 warnings
+  ([\#111](https://github.com/r-dbi/RKazam/issues/111)).
+
 ## RKazam 0.0.0.9055 (2026-09-05)
 
 ### Bug fixes
