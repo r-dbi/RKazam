@@ -1,5 +1,48 @@
 # Changelog
 
+## RKazam 0.0.0.9057 (2026-09-13)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#118](https://github.com/r-dbi/RKazam/issues/118)).
+
+- Remove Copilot setup steps.
+
+### Continuous integration
+
+- Align with cynkratemplate.
+
+### Documentation
+
+- Derive `README.md` from a `README.Rmd`
+  ([\#115](https://github.com/r-dbi/RKazam/issues/115)).
+
+- State the goals and non-goals
+  ([\#114](https://github.com/r-dbi/RKazam/issues/114)).
+
+### Uncategorized
+
+- Refactor(ci): Serve the actions from this repository instead of
+  copying them (cynkra/cynkratemplate#121).
+
+- Refactor(ci): Move every script out of the workflows and into a named
+  action (cynkra/cynkratemplate#120).
+
+- Refactor(ci): Make an action of what the workflows say more than once.
+
+- Refactor(ci): Move every script that could change out of the
+  workflows.
+
+- Refactor(ci): Extract the last three scripts, which only a named
+  action can hold.
+
+- Fix(ci): Keep the raw name expression out of the running job’s step
+  list (cynkra/cynkratemplate#119).
+
+- Fix(fledge): Push the bump to the default branch wherever that is
+  allowed (cynkra/cynkratemplate#117).
+
 ## RKazam 0.0.0.9056 (2026-09-13)
 
 ### Features
