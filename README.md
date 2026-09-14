@@ -2,7 +2,7 @@
 
 <!-- badges: start -->
 [![rcc](https://github.com/r-dbi/RKazam/workflows/rcc/badge.svg)](https://github.com/r-dbi/RKazam/actions)
-[![Codecov test coverage](https://codecov.io/gh/r-dbi/RKazam/branch/master/graph/badge.svg)](https://codecov.io/gh/r-dbi/RKazam?branch=master)
+[![Codecov test coverage](https://codecov.io/gh/r-dbi/RKazam/graph/badge.svg)](https://app.codecov.io/gh/r-dbi/RKazam/tree/main)
 <!-- badges: end -->
 
 RKazam is an DBI-compliant interface to the hypothetical Kazam database. It is intended to be used as boilerplate for new DBI backends.
