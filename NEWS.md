@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9058 (2026-09-15)
+
+## Documentation
+
+- Point the coverage badge at the branch that exists (#112).
+
+
 # RKazam 0.0.0.9057 (2026-09-13)
 
 ## Chore
