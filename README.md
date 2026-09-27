@@ -43,7 +43,7 @@ It is explicitly not trying to:
   Where a working default exists, as for `dbQuoteIdentifier()`, `dbQuoteString()` and `dbGetInfo()` on a result,
   the stub calls that default and is marked optional.
 - Show how to bind to a native database library.
-  The comment in `dbFetch()` points at r-dbi/RPostgres and r-dbi/odbc for the classes that grow a result of unknown length,
+  The comment in [`dbFetch()`](https://dbi.r-dbi.org/reference/dbFetch.html) points at r-dbi/RPostgres and r-dbi/odbc for the classes that grow a result of unknown length,
   rather than reproducing them here.
 
 ## Installation
