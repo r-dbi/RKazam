@@ -1,3 +1,6 @@
+---
+output: cynkratemplate::readme_document
+---
 
 <!-- README.md and index.md are generated from README.Rmd.
      Edit that file and render it the usual way: rmarkdown::render(), devtools::build_readme(), or the Knit button.
@@ -6,7 +9,6 @@
 # RKazam
 
 <!-- badges: start -->
-
 [![rcc](https://github.com/r-dbi/RKazam/workflows/rcc/badge.svg)](https://github.com/r-dbi/RKazam/actions)
 [![Codecov test coverage](https://codecov.io/gh/r-dbi/RKazam/graph/badge.svg)](https://app.codecov.io/gh/r-dbi/RKazam/tree/main)
 <!-- badges: end -->
@@ -24,13 +26,13 @@ RKazam aims to:
   The repository is a GitHub template and the package is CC0-licensed,
   so a new driver can start from it without attribution or licence obligations.
 - Run the full `DBItest` suite from the first commit.
-  `tests/testthat/` builds a [`DBItest::make_context()`](https://dbitest.r-dbi.org/reference/context.html) and calls [`DBItest::test_all()`](https://dbitest.r-dbi.org/reference/test_all.html),
+  `tests/testthat/` builds a `DBItest::make_context()` and calls `DBItest::test_all()`,
   so the specification passes its verdict on every method as it is filled in.
 - Mark the work that is left.
-  Unimplemented methods call [`testthat::skip()`](https://testthat.r-lib.org/reference/skip.html) with their own name,
+  Unimplemented methods call `testthat::skip()` with their own name,
   and `TODO` and `FIXME` comments sit where a real backend has to do something.
 - Track DBI itself.
-  `DESCRIPTION` requires DBI (\>= 1.2.0) and takes the development version from `Remotes:`,
+  `DESCRIPTION` requires DBI (>= 1.2.0) and takes the development version from `Remotes:`,
   and the Arrow classes and generics are stubbed alongside the older ones.
 
 It is explicitly not trying to:
@@ -38,7 +40,7 @@ It is explicitly not trying to:
 - Talk to a database.
   Kazam is hypothetical, `KazamConnection` has no slots, and `dbConnect()` returns an object that holds nothing.
 - Be a package you install and use.
-  Its methods call [`testthat::skip()`](https://testthat.r-lib.org/reference/skip.html) instead of running a query, so it does no useful work until it has been copied and filled in.
+  Its methods call `testthat::skip()` instead of running a query, so it does no useful work until it has been copied and filled in.
 - Reimplement what DBI already provides.
   Where a working default exists, as for `dbQuoteIdentifier()`, `dbQuoteString()` and `dbGetInfo()` on a result,
   the stub calls that default and is marked optional.
@@ -50,10 +52,12 @@ It is explicitly not trying to:
 
 Install from GitHub via
 
-    # install.packages("devtools")
-    devtools::install_github(c("r-dbi/DBI", "r-dbi/RKazam"))
+```
+# install.packages("devtools")
+devtools::install_github(c("r-dbi/DBI", "r-dbi/RKazam"))
+```
 
-------------------------------------------------------------------------
+---
 
 Please note that the 'RKazam' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
 By contributing to this project, you agree to abide by its terms.
