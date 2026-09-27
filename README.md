@@ -8,6 +8,38 @@
 RKazam is an DBI-compliant interface to the hypothetical Kazam database.
 It is intended to be used as boilerplate for new DBI backends.
 
+## Goals and non-goals
+
+RKazam aims to:
+
+- Give a new DBI backend a complete skeleton.
+  One file per method under `R/`, with the S4 classes, the `setMethod()` calls and the `NAMESPACE` re-exports already in place.
+- Be copied rather than depended on.
+  The repository is a GitHub template and the package is CC0-licensed,
+  so a new driver can start from it without attribution or licence obligations.
+- Run the full `DBItest` suite from the first commit.
+  `tests/testthat/` builds a `DBItest::make_context()` and calls `DBItest::test_all()`,
+  so the specification passes its verdict on every method as it is filled in.
+- Mark the work that is left.
+  Unimplemented methods call `testthat::skip()` with their own name,
+  and `TODO` and `FIXME` comments sit where a real backend has to do something.
+- Track DBI itself.
+  `DESCRIPTION` requires DBI (>= 1.2.0) and takes the development version from `Remotes:`,
+  and the Arrow classes and generics are stubbed alongside the older ones.
+
+It is explicitly not trying to:
+
+- Talk to a database.
+  Kazam is hypothetical, `KazamConnection` has no slots, and `dbConnect()` returns an object that holds nothing.
+- Be a package you install and use.
+  Its methods call `testthat::skip()` instead of running a query, so it does no useful work until it has been copied and filled in.
+- Reimplement what DBI already provides.
+  Where a working default exists, as for `dbQuoteIdentifier()`, `dbQuoteString()` and `dbGetInfo()` on a result,
+  the stub calls that default and is marked optional.
+- Show how to bind to a native database library.
+  The comment in `dbFetch()` points at r-dbi/RPostgres and r-dbi/odbc for the classes that grow a result of unknown length,
+  rather than reproducing them here.
+
 ## Installation
 
 Install from GitHub via
