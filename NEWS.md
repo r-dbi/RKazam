@@ -1,5 +1,16 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# RKazam 0.0.0.9060 (2026-09-27)
+
+## Chore
+
+- Auto-update from GitHub Actions (#118).
+
+## Continuous integration
+
+- Run coverage checks after pkgdown push.
+
+
 # RKazam 0.0.0.9059 (2026-09-26)
 
 - Refactor(ci): Serve the revdep scripts with the actions instead of copying them (cynkra/cynkratemplate#149).
