@@ -1,5 +1,12 @@
 # Changelog
 
+## RKazam 0.0.0.9062 (2026-11-27)
+
+### Continuous integration
+
+- Sync the workflows with cynkra/cynkratemplate
+  ([\#125](https://github.com/r-dbi/RKazam/issues/125)).
+
 ## RKazam 0.0.0.9061 (2026-10-11)
 
 ### Chore
