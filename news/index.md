@@ -1,5 +1,23 @@
 # Changelog
 
+## RKazam 0.0.0.9061 (2026-10-11)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#123](https://github.com/r-dbi/RKazam/issues/123)).
+
+## RKazam 0.0.0.9060 (2026-09-27)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#118](https://github.com/r-dbi/RKazam/issues/118)).
+
+### Continuous integration
+
+- Run coverage checks after pkgdown push.
+
 ## RKazam 0.0.0.9059 (2026-09-26)
 
 - Refactor(ci): Serve the revdep scripts with the actions instead of
