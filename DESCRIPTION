@@ -1,18 +1,14 @@
 Package: RKazam
 Title: Boilerplate for implementing a DBI back end
 Version: 0.0.0.9062
-Authors@R: 
-    c(person(given = "Kirill",
-             family = "M\u00fcller",
-             role = c("aut", "cre"),
-             email = "kirill@cynkra.com",
-             comment = c(ORCID = "0000-0002-1416-3412")),
-      person(given = "R Consortium",
-             role = "fnd")
-    )
-Description: A dummy DBI back end that provides access to a
-    hypothetical data source named "Kazam", intended to be used as
-    boilerplate for implementing DBI back ends from scratch.
+Authors@R: c(
+    person("Kirill", "Müller", , "kirill@cynkra.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1416-3412")),
+    person("R Consortium", role = "fnd")
+  )
+Description: A dummy DBI back end that provides access to a hypothetical
+    data source named "Kazam", intended to be used as boilerplate for
+    implementing DBI back ends from scratch.
 License: CC0
 URL: https://rkazam.r-dbi.org, https://github.com/r-dbi/RKazam
 Depends: 
@@ -26,7 +22,10 @@ Suggests:
     DBItest (>= 1.8.2)
 Remotes: 
     r-dbi/DBI
+Config/autostyle/scope: line_breaks
+Config/autostyle/strict: false
 Config/Needs/website: r-dbi/dbitemplate
+Config/roxygen2/version: 8.1.1.9000
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Collate: 
@@ -73,6 +72,3 @@ Collate:
     'show_Connection.R'
     'show_Driver.R'
     'show_Result.R'
-Config/autostyle/scope: line_breaks
-Config/autostyle/strict: false
-Config/roxygen2/version: 8.1.1.9000
