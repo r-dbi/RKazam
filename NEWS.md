@@ -1,5 +1,3 @@
-<!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
-
 # RKazam 0.0.0.9063 (2026-11-28)
 
 ## Chore
