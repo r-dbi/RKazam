@@ -1,6 +1,6 @@
 # Uploads the checked tarball to win-builder and macbuilder with the reusable workflow of krlmlr/r-release-actions,
 # and reports both on the release's checklist pull request, whose body starts with `<!-- release-checklist: RKazam X.Y.Z -->`.
-# It builds nothing: it takes the tarball from a green run of R-CMD-check.yaml on the same commit.
+# It builds nothing: it takes the tarball from a green push or manual run of R-CMD-check.yaml whose commit is the head of a branch here.
 # Every upload is started by hand, because each one sends an email:
 # `gh workflow run builders.yaml --repo r-dbi/RKazam --ref <branch> [-f queues="R-devel R-release"]`.
 # Only on r-dbi/RKazam: in a fork, the job is skipped.

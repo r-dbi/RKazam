@@ -2,7 +2,10 @@
 # it fails on what CRAN requires, reports on what CRAN expects,
 # and keeps one comment on the release's checklist pull request, whose body starts with `<!-- release-checklist: RKazam X.Y.Z -->`.
 # The checks are CRAN's although RKazam is not submitted there; the reusable workflow has no input to skip or soften them.
-# It builds nothing: it takes the tarball from a green run of R-CMD-check.yaml on the same commit.
+# The hard checks cannot pass while DESCRIPTION has a `Remotes:` field, as `Remotes: r-dbi/DBI` now,
+# or while the version is a development version.
+# So the gate runs on the release branch, once its version and DESCRIPTION are prepared.
+# It builds nothing: it takes the tarball from a green push or manual run of R-CMD-check.yaml whose commit is the head of a branch here.
 # Dispatch it by hand on the release branch after the date commit and the run of R-CMD-check.yaml on it,
 # and again after every change to it:
 # `gh workflow run release-gate.yaml --repo r-dbi/RKazam --ref <branch>`.
